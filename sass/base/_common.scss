@@ -1,0 +1,9 @@
+body {
+  font-family: var(--main-font-family);
+  color: var(--first-color);
+  letter-spacing: 0.03em;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
