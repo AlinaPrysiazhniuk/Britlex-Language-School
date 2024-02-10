@@ -61,7 +61,7 @@ img {
 body {
   font-family: var(--main-font-family);
   color: var(--text-main-color);
-  letter-spacing: 0.03em;
+  letter-spacing: normal;
 }
 
 .no-scroll {
