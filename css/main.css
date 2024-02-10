@@ -2,6 +2,8 @@
   --link-color: #263238;
   --text-button-color: #000000;
   --border-button-color: #263238;
+  --logo-first-color: #000000;
+  --logo-second-color: #939393;
   --title-section-main-color: #000000;
   --text-main-color: #8f95a5;
   --button-text-color: #ffffff;
@@ -26,6 +28,86 @@
   --button-text-color: #ffffff;
   --bg-button-color: #263238;
   --link-color: #8f95a5;
+  --main-font-family: Poppins, Times New Roman, Arial, Helvetica;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-list {
+  display: -webkit-box;
+  gap: 50px;
+  margin-left: 236px;
+}
+
+.header-button {
+  display: block;
+  margin-left: 121px;
+  border: 2px solid var(--border-button-color);
+  border-radius: 10px;
+  background-color: var(--button-text-color);
+  color: var(--text-button-color);
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  width: 312px;
+  height: 70px;
+  letter-spacing: 0.03em;
+}
+
+.page-item {
+  list-style-type: none;
+}
+
+.page-link {
+  color: var(--link-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.03em;
 }
 
 .section {
@@ -50,6 +132,24 @@
 .container {
   width: 100%;
   padding-left: 131px;
-  padding-left: 131px;
+  padding-right: 131px;
   margin: 0 auto;
+  width: 1600px;
+}
+
+.logo-header {
+  font-family: Poppins;
+  font-size: 36px;
+  line-height: 1.5;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.logo-begin {
+  color: var(--logo-first-color);
+}
+
+.logo-end {
+  color: var(--logo-second-color);
 }/*# sourceMappingURL=main.css.map */
