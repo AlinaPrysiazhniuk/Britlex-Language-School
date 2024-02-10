@@ -90,9 +90,11 @@ img {
   border-radius: 10px;
   background-color: var(--button-text-color);
   color: var(--text-button-color);
+  font-family: var(--main-font-family);
   font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
+  padding: 0;
   width: 312px;
   height: 70px;
   letter-spacing: 0.03em;
@@ -106,8 +108,9 @@ img {
   color: var(--link-color);
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
+  font-family: var(--main-font-family);
 }
 
 .section {
@@ -138,7 +141,7 @@ img {
 }
 
 .logo-header {
-  font-family: Poppins;
+  font-family: var(--main-font-family);
   font-size: 36px;
   line-height: 1.5;
   text-decoration: none;
