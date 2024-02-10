@@ -2,13 +2,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  //justify-content: space-between;
-
-  //outline: 2px solid red;
-  // border: 2px solid red;
-
-  // margin-left: 131px;
-  // margin-right: 131px;
 }
 
 .navigation {
@@ -29,14 +22,14 @@
   border-radius: 10px;
   background-color: var(--button-text-color);
   color: var(--text-button-color);
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
   padding: 0;
   width: 312px;
   height: 70px;
-  letter-spacing: 0.03em;
+  // letter-spacing: 0.03em;
 }
 
 .page-item {
@@ -48,6 +41,6 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.03em;
-  font-family: var(--main-font-family);
+  // letter-spacing: 0.03em;
+  // font-family: var(--main-font-family);
 }
