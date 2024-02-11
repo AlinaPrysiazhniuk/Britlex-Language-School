@@ -231,7 +231,7 @@ body {
   padding-left: 18px;
   padding-right: 18px;
   height: auto;
-  position: relative;
+  border-radius: 10px;
 }
 
 .block-2 {
@@ -256,21 +256,28 @@ body {
   border-radius: 10px;
 }
 
-.block {
+.block-writing {
   margin-bottom: 30px;
-  padding-right: 55px;
+  padding-right: 50px;
 }
 
 .skills-block-writing {
   width: 426px;
   padding: 32px 18px;
   background-color: var(--bg-color);
+  border-radius: 10px;
 }
 
 .skills-block-reading {
   width: 426px;
   padding: 32px 18px;
   background-color: var(--bg-color);
+  border-radius: 10px;
+}
+
+.block-reading {
+  padding-right: 31px;
+  margin-bottom: 30px;
 }
 
 .logo-header {
