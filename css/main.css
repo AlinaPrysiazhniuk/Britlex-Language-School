@@ -308,6 +308,10 @@ body {
   padding: 32px 18px;
 }
 
+.listening-text {
+  padding-right: 141px;
+}
+
 .skills-img-listening {
   margin-bottom: 0;
 }
