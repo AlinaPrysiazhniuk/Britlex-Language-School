@@ -124,6 +124,7 @@ body {
   font-weight: 600;
   line-height: 1.25;
   color: var(--title-section-main-color);
+  margin-bottom: 40px;
 }
 
 .hero-image {
@@ -140,6 +141,29 @@ body {
 .hero-info {
   width: 540px;
   margin-right: 144px;
+}
+
+.hero-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-main-color);
+  margin-bottom: 60px;
+}
+
+.hero-button {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--button-text-color);
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 64px;
+  padding-right: 64px;
+  width: 426px;
+  border: none;
+  background-color: var(--bg-button-color);
+  border-radius: 10px;
 }
 
 .section {
