@@ -292,6 +292,17 @@ body {
   gap: 30px;
 }
 
+.skills-block-listening {
+  background-color: var(--bg-color);
+  width: 882px;
+  height: 338px;
+  border-radius: 10px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .logo-header {
   font-size: 36px;
   line-height: 1.5;
