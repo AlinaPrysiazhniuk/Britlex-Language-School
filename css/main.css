@@ -305,6 +305,15 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  padding: 32px 18px;
+}
+
+.skills-img-listening {
+  margin-bottom: 0;
+}
+
+.block-listening {
+  margin-bottom: 30px;
 }
 
 .logo-header {
