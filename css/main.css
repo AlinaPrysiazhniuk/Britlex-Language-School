@@ -290,6 +290,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  position: relative;
 }
 
 .skills-block-listening {
@@ -301,6 +302,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .logo-header {

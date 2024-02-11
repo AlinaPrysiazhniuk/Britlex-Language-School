@@ -94,6 +94,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  position: relative;
 }
 
 .skills-block-listening {
@@ -103,6 +104,9 @@
   border-radius: 10px;
   border: none;
   display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .listening-text {
