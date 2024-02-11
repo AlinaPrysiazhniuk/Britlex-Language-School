@@ -247,14 +247,24 @@ body {
   font-weight: 500;
   line-height: 1.5;
   color: var(--button-text-color);
-  padding-top: 17px;
-  padding-bottom: 16px;
-  padding-left: 64px;
-  padding-right: 63px;
   background-color: var(--bg-button-color);
   border: none;
   border-radius: 10px;
   display: inline-block;
+}
+
+.load-more-speaking {
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 64px;
+  padding-right: 63px;
+}
+
+.load-more {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 52px;
+  padding-right: 51px;
 }
 
 .block-writing {
