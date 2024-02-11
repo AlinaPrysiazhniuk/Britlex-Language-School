@@ -73,6 +73,7 @@
   padding: 32px 18px;
   background-color: var(--bg-color);
   border-radius: 10px;
+  height: 579px;
 }
 
 .skills-block-reading {
@@ -80,9 +81,16 @@
   padding: 32px 18px;
   background-color: var(--bg-color);
   border-radius: 10px;
+  height: 579px;
 }
 
 .block-reading {
   padding-right: 31px;
   margin-bottom: 30px;
+}
+
+.skills-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
