@@ -11,6 +11,7 @@
   --title-section-main-color: #000000;
   --text-accent-color: #263238;
   --text-main-color: #8f95a5;
+  --bg-color: #f5f5f5;
   --button-text-color: #ffffff;
   --bg-button-color: #263238;
   --title-section-main-color: #000000;
@@ -55,7 +56,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -191,6 +191,68 @@ body {
   padding-right: 131px;
   margin: 0 auto;
   width: 1600px;
+}
+
+.skills-title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--title-section-main-color);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.skills-title-block {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-accent-color);
+  margin-bottom: 20px;
+}
+
+.skills-text {
+  margin-bottom: 30px;
+  padding-right: 43px;
+}
+
+.skills-text-block {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-main-color);
+  text-align: left;
+}
+
+.skills-block-speaking {
+  background-color: var(--bg-color);
+  width: 426px;
+  padding-top: 32px;
+  padding-bottom: 154px;
+  padding-left: 18px;
+  padding-right: 18px;
+  height: auto;
+}
+
+.block-2 {
+  margin-bottom: 20px;
+}
+
+.skills-img {
+  margin-bottom: 24px;
+}
+
+.skills-link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--button-text-color);
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 64px;
+  padding-right: 63px;
+  background-color: var(--bg-button-color);
+  border: none;
+  border-radius: 10px;
 }
 
 .logo-header {
