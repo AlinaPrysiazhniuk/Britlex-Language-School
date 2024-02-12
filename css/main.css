@@ -407,6 +407,7 @@ body {
 
 .pricing-item {
   width: 100%;
+  position: relative;
 }
 
 .pricing-info {
