@@ -407,11 +407,9 @@ body {
 
 .pricing-item {
   width: 100%;
+  display: block;
   position: relative;
-}
-
-.pricing-info {
-  margin-bottom: 30px;
+  height: 584px;
 }
 
 .pricing-title-block {
@@ -437,6 +435,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 28px;
+  position: absolute;
+  bottom: 0;
   padding-top: 5px;
   padding-bottom: 4px;
   padding-left: 23px;

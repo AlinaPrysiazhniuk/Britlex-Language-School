@@ -14,12 +14,11 @@
 
 .pricing-item {
   width: 100%;
+  display: block;
   position: relative;
+  height: 584px;
 }
 
-.pricing-info {
-  margin-bottom: 30px;
-}
 .pricing-title-block {
   font-weight: 600;
   font-size: 30px;
@@ -39,8 +38,8 @@
   display: inline-flex;
   align-items: center;
   gap: 28px;
-  //   position: absolute;
-  //   bottom: 0;
+  position: absolute;
+  bottom: 0;
   padding-top: 5px;
   padding-bottom: 4px;
   padding-left: 23px;
