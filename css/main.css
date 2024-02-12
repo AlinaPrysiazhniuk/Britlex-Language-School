@@ -537,8 +537,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  padding-top: 22px;
-  padding-bottom: 22px;
 }
 
 .list-agreements {
@@ -560,7 +558,7 @@ body {
 .container-footer:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -22px;
   display: block;
   width: 1338px;
   height: 1px;
