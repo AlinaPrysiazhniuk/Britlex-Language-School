@@ -4,7 +4,10 @@
   line-height: 1.5;
   color: var(--title-section-main-color);
   margin-bottom: 60px;
-  //   text-align: center;
+}
+
+.contacts-info-details {
+  padding-right: 114px;
 }
 
 .container-contacts {
@@ -18,8 +21,6 @@
   line-height: 1.5;
   color: var(--text-main-color);
   margin-bottom: 30px;
-  display: block;
-  width: 654px;
 }
 
 .contacts-form {

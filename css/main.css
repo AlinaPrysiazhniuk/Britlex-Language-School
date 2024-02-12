@@ -472,6 +472,10 @@ body {
   margin-bottom: 60px;
 }
 
+.contacts-info-details {
+  padding-right: 114px;
+}
+
 .container-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,8 +489,6 @@ body {
   line-height: 1.5;
   color: var(--text-main-color);
   margin-bottom: 30px;
-  display: block;
-  width: 654px;
 }
 
 .contacts-form {
