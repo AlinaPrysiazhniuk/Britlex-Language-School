@@ -527,16 +527,18 @@ body {
 }
 
 .container-footer {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .list-agreements {
@@ -552,12 +554,13 @@ body {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--link-color);
+  padding-top: 31px;
 }
 
 .container-footer:before {
   content: "";
   position: absolute;
-  top: -22px;
+  top: 0;
   display: block;
   width: 1338px;
   height: 1px;
