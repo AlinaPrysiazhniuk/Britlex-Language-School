@@ -464,6 +464,65 @@ body {
   margin-bottom: 31px;
 }
 
+.contacts-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.5;
+  color: var(--title-section-main-color);
+  margin-bottom: 60px;
+}
+
+.container-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 144px;
+}
+
+.contacts-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--text-main-color);
+  margin-bottom: 30px;
+  display: block;
+  width: 654px;
+}
+
+.contacts-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.form-email {
+  width: 425px;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--text-main-color);
+  padding: 20px 30px;
+  border: 1px solid var(--button-border-color);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.form-button {
+  width: 312px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--bg-button-color);
+  padding: 20px 56px;
+  letter-spacing: 0.03em;
+}
+
 .logo-header {
   font-size: 36px;
   line-height: 1.5;
