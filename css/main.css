@@ -786,7 +786,22 @@ a {
 }
 @media screen and (min-width: 768px) {
   .about-img {
+    width: 295px;
+    height: 295px;
     margin-bottom: 0;
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+}
+
+.about-block {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .about-info {
+    width: 321px;
   }
 }
 
@@ -828,7 +843,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .about-list {
-    gap: 131px;
+    gap: 72px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -836,6 +851,11 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about-list {
+    gap: 131px;
   }
 }
 

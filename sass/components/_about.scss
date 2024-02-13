@@ -26,13 +26,24 @@
 .about-img {
   margin-bottom: 23px;
   @include tablet {
+    width: 295px;
+    height: 295px;
     margin-bottom: 0;
+    position: absolute;
+    top: 30px;
+    right: 0;
   }
 }
 
-// .about-block {
-//   width: 652px;
-// }
+.about-block {
+  position: relative;
+}
+
+.about-info {
+  @include tablet {
+    width: 321px;
+  }
+}
 
 .about-text {
   font-weight: 400;
@@ -58,9 +69,12 @@
   flex-direction: column;
   align-items: center;
   @include tablet {
-    gap: 131px;
+    gap: 72px;
     flex-direction: row;
     align-items: center;
+  }
+  @include desktop {
+    gap: 131px;
   }
 }
 
