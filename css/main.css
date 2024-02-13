@@ -800,6 +800,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .about-text {
+    text-align: left;
     font-size: 14px;
   }
 }
@@ -825,9 +826,16 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) {
   .about-list {
     gap: 131px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -845,6 +853,11 @@ a {
           flex-direction: column;
   gap: 9px;
 }
+@media screen and (min-width: 768px) {
+  .about-statistics {
+    display: table-caption;
+  }
+}
 
 .statistics-number {
   font-weight: 600;
@@ -854,12 +867,11 @@ a {
 @media screen and (min-width: 768px) {
   .statistics-number {
     font-size: 22px;
-    line-height: 3.64;
+    line-height: 1.5;
   }
 }
 @media screen and (min-width: 1600px) {
   .statistics-number {
-    line-height: 1.5;
     font-size: 48px;
   }
 }

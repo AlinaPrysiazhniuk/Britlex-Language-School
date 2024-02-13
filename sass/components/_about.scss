@@ -43,6 +43,7 @@
   margin-bottom: 30px;
 
   @include tablet {
+    text-align: left;
     font-size: 14px;
   }
   @include desktop {
@@ -56,8 +57,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  @include desktop {
+  @include tablet {
     gap: 131px;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -66,13 +69,13 @@
 }
 
 .about-statistics {
-  // display: table-caption;
   display: flex;
   flex-direction: column;
   gap: 9px;
 
-  // @include tablet {
-  // }
+  @include tablet {
+    display: table-caption;
+  }
 }
 
 .statistics-number {
@@ -82,10 +85,10 @@
   font-size: 24px;
   @include tablet {
     font-size: 22px;
-    line-height: 3.64;
+    line-height: 1.5;
   }
   @include desktop {
-    line-height: 1.5;
+    // line-height: 1.5;
     font-size: 48px;
   }
 }
