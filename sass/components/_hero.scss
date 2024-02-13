@@ -17,11 +17,6 @@
   }
 }
 
-.hero-image {
-  width: 654px;
-  height: 510px;
-}
-
 .hero-container {
   @include tablet {
     display: flex;
@@ -79,12 +74,15 @@
 
 .icon-light-bulb {
   visibility: hidden;
+  display: none;
 
   @include tablet {
     visibility: visible;
+    display: block;
   }
   @include desktop {
     visibility: hidden;
+    display: none;
   }
 }
 
@@ -120,8 +118,11 @@
 }
 
 .hero-img {
+  margin-bottom: 16px;
+
   @include tablet {
     width: 352px;
+    margin-bottom: 0;
   }
   @include desktop {
     width: 654px;
