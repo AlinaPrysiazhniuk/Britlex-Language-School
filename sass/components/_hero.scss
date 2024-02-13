@@ -20,11 +20,9 @@
 }
 
 .hero-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
   @include tablet {
+    display: flex;
+    align-items: center;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
   }
