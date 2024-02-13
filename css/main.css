@@ -750,15 +750,6 @@ a {
   }
 }
 
-@media screen and (min-width: 1600px) {
-  .about-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 146px;
-  }
-}
-
 .about-title {
   color: var(--title-section-main-color);
   font-weight: 600;
@@ -794,6 +785,16 @@ a {
     right: 0;
   }
 }
+@media screen and (min-width: 1600px) {
+  .about-img {
+    width: 540px;
+    height: 540px;
+    margin-bottom: 0;
+    position: absolute;
+    top: -30px;
+    right: 0;
+  }
+}
 
 .about-block {
   position: relative;
@@ -802,6 +803,11 @@ a {
 @media screen and (min-width: 768px) {
   .about-info {
     width: 321px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about-info {
+    width: 652px;
   }
 }
 

@@ -1,7 +1,7 @@
 .about-container {
   @include desktop {
-    display: flex;
-    gap: 146px;
+    //display: flex;
+    //gap: 146px;
   }
 }
 
@@ -33,6 +33,15 @@
     top: 30px;
     right: 0;
   }
+
+  @include desktop {
+    width: 540px;
+    height: 540px;
+    margin-bottom: 0;
+    position: absolute;
+    top: -30px;
+    right: 0;
+  }
 }
 
 .about-block {
@@ -42,6 +51,10 @@
 .about-info {
   @include tablet {
     width: 321px;
+  }
+
+  @include desktop {
+    width: 652px;
   }
 }
 
