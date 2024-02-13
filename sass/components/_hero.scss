@@ -1,9 +1,17 @@
 .hero-title {
-  font-size: 64px;
   font-weight: 600;
   line-height: 1.25;
   color: var(--title-section-main-color);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  @include desktop {
+    font-size: 64px;
+    margin-bottom: 40px;
+  }
 }
 
 .hero-image {
@@ -13,11 +21,28 @@
 
 .hero-container {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @include tablet {
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+  }
+  @include desktop {
+    flex-direction: row-reverse;
+  }
 }
 
 .hero-info {
-  width: 540px;
-  margin-right: 144px;
+  @include tablet {
+    width: 338px;
+    margin-right: 22px;
+  }
+
+  @include desktop {
+    width: 540px;
+    margin-right: 144px;
+  }
 }
 
 .hero-text {
@@ -41,4 +66,15 @@
   border: none;
   background-color: var(--bg-button-color);
   border-radius: 10px;
+}
+
+.hero-img {
+  @include tablet {
+    width: 352px;
+    // height: 352px;
+  }
+  @include desktop {
+    width: 654px;
+    height: 510px;
+  }
 }

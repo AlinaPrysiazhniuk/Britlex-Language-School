@@ -1,7 +1,9 @@
 .header-container {
-  display: flex;
-  align-items: center;
-  position: relative;
+  @include desktop {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
 }
 
 .navigation {
@@ -10,24 +12,31 @@
 }
 
 .page-list {
-  display: -webkit-box;
-  gap: 50px;
-  margin-left: 236px;
+  display: none;
+
+  @include desktop {
+    display: -webkit-box;
+    gap: 50px;
+    margin-left: 236px;
+  }
 }
 
 .header-button {
-  display: block;
-  margin-left: 121px;
-  border: 2px solid var(--border-button-color);
-  border-radius: 10px;
-  background-color: var(--button-text-color);
-  color: var(--text-button-color);
-  font-size: 20px;
-  line-height: 1.5;
-  font-weight: 400;
-  padding: 0;
-  width: 312px;
-  height: 70px;
+  display: none;
+  @include desktop {
+    display: block;
+    margin-left: 121px;
+    border: 2px solid var(--border-button-color);
+    border-radius: 10px;
+    background-color: var(--button-text-color);
+    color: var(--text-button-color);
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0;
+    width: 312px;
+    height: 70px;
+  }
 }
 
 .page-item {
