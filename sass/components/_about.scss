@@ -1,32 +1,64 @@
 .about-container {
-  display: flex;
-  gap: 146px;
+  @include desktop {
+    display: flex;
+    gap: 146px;
+  }
 }
 
 .about-title {
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 1.5;
   color: var(--title-section-main-color);
-  margin-bottom: 60px;
+  font-weight: 600;
+  line-height: 3.33;
+  font-size: 24px;
+  text-align: center;
+  @include tablet {
+    text-align: left;
+    font-size: 30px;
+    line-height: 2.67;
+  }
+  @include desktop {
+    font-size: 48px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
 }
 
-.about-block {
-  width: 652px;
+.about-img {
+  margin-bottom: 23px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
+
+// .about-block {
+//   width: 652px;
+// }
 
 .about-text {
-  font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
   color: var(--text-main-color);
+  font-size: 13px;
+  text-align: center;
   margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 14px;
+  }
+  @include desktop {
+    font-size: 20px;
+  }
 }
 
 .about-list {
+  gap: 28px;
   display: flex;
   justify-content: center;
-  gap: 131px;
+  flex-direction: column;
+  align-items: center;
+  @include desktop {
+    gap: 131px;
+  }
 }
 
 .about-item {
@@ -34,19 +66,41 @@
 }
 
 .about-statistics {
-  display: table-caption;
+  // display: table-caption;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+
+  // @include tablet {
+  // }
 }
 
 .statistics-number {
-  font-size: 48px;
   font-weight: 600;
-  line-height: 1.5;
+  // margin-bottom: 12px;
   color: var(--numbers-color);
+  font-size: 24px;
+  @include tablet {
+    font-size: 22px;
+    line-height: 3.64;
+  }
+  @include desktop {
+    line-height: 1.5;
+    font-size: 48px;
+  }
 }
 
 .statistics-text {
-  font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
   color: var(--text-main-color);
+  font-size: 15px;
+
+  @include tablet {
+    font-size: 13px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+  }
 }
