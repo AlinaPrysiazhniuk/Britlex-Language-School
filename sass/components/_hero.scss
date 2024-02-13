@@ -2,15 +2,18 @@
   font-weight: 600;
   line-height: 1.25;
   color: var(--title-section-main-color);
-  margin-bottom: 20px;
+
+  text-align: center;
 
   @include tablet {
     font-size: 36px;
-    margin-bottom: 25px;
+    // margin-bottom: 25px;
+    text-align: left;
   }
   @include desktop {
     font-size: 64px;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
+    text-align: left;
   }
 }
 
@@ -34,7 +37,6 @@
 .hero-info {
   @include tablet {
     width: 338px;
-    margin-right: 22px;
   }
 
   @include desktop {
@@ -44,32 +46,82 @@
 }
 
 .hero-text {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 14px;
   line-height: 1.5;
-  color: var(--text-main-color);
-  margin-bottom: 60px;
+  text-align: center;
+  margin-bottom: 33px;
+
+  @include tablet {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  @include desktop {
+    font-size: 24px;
+    color: var(--text-main-color);
+    margin-bottom: 60px;
+  }
+}
+
+.title-svg {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-end;
+  }
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
+
+.icon-light-bulb {
+  visibility: hidden;
+
+  @include tablet {
+    visibility: visible;
+  }
+  @include desktop {
+    visibility: hidden;
+  }
 }
 
 .hero-button {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.5;
   color: var(--button-text-color);
-  padding-top: 23px;
-  padding-bottom: 23px;
-  padding-left: 64px;
-  padding-right: 64px;
-  width: 426px;
-  border: none;
   background-color: var(--bg-button-color);
-  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  padding: 16px 99px;
+  width: 289px;
+  border-radius: 5px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 19px 67px;
+    width: 236px;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 64px;
+    padding-right: 64px;
+    width: 426px;
+    border-radius: 10px;
+  }
 }
 
 .hero-img {
   @include tablet {
     width: 352px;
-    // height: 352px;
   }
   @include desktop {
     width: 654px;
