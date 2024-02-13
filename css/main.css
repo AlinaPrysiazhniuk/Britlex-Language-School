@@ -920,19 +920,36 @@ a {
 }
 
 .pricing-title {
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.5;
   color: var(--title-section-main-color);
   text-align: center;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 768px) {
+  .pricing-title {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .pricing-title {
+    font-size: 48px;
+  }
+}
 
-.pricing-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .pricing-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .pricing-list {
+    gap: 30px;
+  }
 }
 
 .pricing-item {
@@ -944,17 +961,40 @@ a {
 
 .pricing-title-block {
   font-weight: 600;
-  font-size: 30px;
+  text-align: center;
   line-height: 1.5;
   color: var(--text-accent-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .pricing-title-block {
+    text-align: left;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .pricing-title-block {
+    font-size: 30px;
+  }
+}
 
 .pricing-text {
-  font-weight: 400;
-  font-size: 20px;
   line-height: 1.5;
+  font-weight: 400;
   color: var(--text-main-color);
+  font-size: 13px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .pricing-text {
+    text-align: left;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .pricing-text {
+    font-size: 20px;
+  }
 }
 
 .pricing-price {
