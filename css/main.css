@@ -411,7 +411,7 @@ a {
   .skills-title-block {
     font-size: 20px;
     line-height: 1.5;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -425,9 +425,13 @@ a {
 .skills-text {
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) {
   .skills-text {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .skills-text {
     padding-right: 43px;
   }
 }
@@ -447,6 +451,16 @@ a {
 
 .block-2 {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .block-2 {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .block-2 {
+    margin-bottom: 20px;
+  }
 }
 
 .skills-img {
@@ -498,7 +512,7 @@ a {
 }
 
 .load-more {
-  padding: 14px 43px;
+  padding: 13px 43px;
 }
 @media screen and (min-width: 1600px) {
   .load-more {
@@ -656,7 +670,10 @@ a {
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 32px 18px;
+    padding-left: 22px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 0;
     width: 462px;
     height: 210px;
     margin-bottom: 0px;
@@ -664,6 +681,7 @@ a {
 }
 @media screen and (min-width: 1600px) {
   .skills-block-listening {
+    padding: 32px 18px;
     width: 882px;
     height: 338px;
   }
@@ -678,6 +696,18 @@ a {
 .skills-img-listening {
   margin-bottom: 0;
 }
+@media screen and (min-width: 768px) {
+  .skills-img-listening {
+    width: 202px;
+    height: 134px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .skills-img-listening {
+    width: 408px;
+    height: 274px;
+  }
+}
 
 .block-listening {
   margin-bottom: 30px;
@@ -690,6 +720,33 @@ a {
 @media screen and (min-width: 1600px) {
   .block-listening {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img-writing {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .img-writing {
+    width: 390px;
+    height: 264px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img-speaking {
+    margin-bottom: 25px;
+    width: 214px;
+    height: 214px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .img-speaking {
+    width: 390px;
+    height: 390px;
   }
 }
 

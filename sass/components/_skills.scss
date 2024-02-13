@@ -24,7 +24,7 @@
   @include tablet {
     font-size: 20px;
     line-height: 1.5;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 
   @include desktop {
@@ -36,8 +36,10 @@
 
 .skills-text {
   margin-bottom: 20px;
-  @include desktop {
+  @include tablet {
     margin-bottom: 30px;
+  }
+  @include desktop {
     padding-right: 43px;
   }
 }
@@ -56,6 +58,12 @@
 
 .block-2 {
   margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 25px;
+  }
+  @include desktop {
+    margin-bottom: 20px;
+  }
 }
 
 .skills-img {
@@ -101,7 +109,7 @@
 }
 
 .load-more {
-  padding: 14px 43px;
+  padding: 13px 43px;
 
   @include desktop {
     padding: 15px 52px;
@@ -235,13 +243,17 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    padding: 32px 18px;
+    padding-left: 22px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 0;
     width: 462px;
     height: 210px;
     margin-bottom: 0px;
   }
 
   @include desktop {
+    padding: 32px 18px;
     width: 882px;
     height: 338px;
   }
@@ -255,6 +267,15 @@
 
 .skills-img-listening {
   margin-bottom: 0;
+  @include tablet {
+    width: 202px;
+    height: 134px;
+  }
+
+  @include desktop {
+    width: 408px;
+    height: 274px;
+  }
 }
 
 .block-listening {
@@ -266,5 +287,28 @@
 
   @include desktop {
     margin-bottom: 30px;
+  }
+}
+
+.img-writing {
+  @include tablet {
+    width: 200px;
+    height: 200px;
+  }
+  @include desktop {
+    width: 390px;
+    height: 264px;
+  }
+}
+
+.img-speaking {
+  @include tablet {
+    margin-bottom: 25px;
+    width: 214px;
+    height: 214px;
+  }
+  @include desktop {
+    width: 390px;
+    height: 390px;
   }
 }
