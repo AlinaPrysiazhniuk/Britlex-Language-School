@@ -3,7 +3,6 @@
   line-height: 1.5;
   text-decoration: none;
   font-weight: 400;
-  margin-bottom: 15px;
 
   @include tablet {
     font-size: 36px;
@@ -16,4 +15,11 @@
 
 .logo-end {
   color: var(--logo-second-color);
+}
+
+.logo-footer {
+  margin-bottom: 15px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }

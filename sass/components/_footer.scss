@@ -56,3 +56,18 @@
     width: 1338px;
   }
 }
+
+.item-agreement {
+  position: relative;
+}
+
+.item-agreement:not(:first-child)::before {
+  width: 3px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--line-psevdo-color);
+  content: '';
+  position: absolute;
+  top: 7.5px;
+  left: -5px;
+}

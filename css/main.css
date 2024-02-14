@@ -1380,12 +1380,26 @@ a {
   }
 }
 
+.item-agreement {
+  position: relative;
+}
+
+.item-agreement:not(:first-child)::before {
+  width: 3px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--line-psevdo-color);
+  content: "";
+  position: absolute;
+  top: 7.5px;
+  left: -5px;
+}
+
 .logo {
   font-size: 24px;
   line-height: 1.5;
   text-decoration: none;
   font-weight: 400;
-  margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -1399,6 +1413,15 @@ a {
 
 .logo-end {
   color: var(--logo-second-color);
+}
+
+.logo-footer {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    margin-bottom: 0;
+  }
 }
 
 .logo {
