@@ -953,10 +953,28 @@ a {
 }
 
 .pricing-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   width: 100%;
-  display: block;
-  position: relative;
-  height: 584px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .pricing-item {
+    height: 450px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .pricing-item {
+    height: 584px;
+  }
 }
 
 .pricing-title-block {
@@ -984,6 +1002,7 @@ a {
   color: var(--text-main-color);
   font-size: 13px;
   text-align: center;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .pricing-text {

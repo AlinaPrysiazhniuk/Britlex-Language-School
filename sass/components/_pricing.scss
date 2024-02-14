@@ -26,12 +26,19 @@
 }
 
 .pricing-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
   width: 100%;
-  display: block;
-  position: relative;
-  height: 584px;
-  // padding-left: 10px;
-  //   padding-right: 10px;
+
+  margin-bottom: 40px;
+  @include tablet {
+    height: 450px;
+  }
+  @include desktop {
+    height: 584px;
+  }
 }
 
 .pricing-title-block {
@@ -57,6 +64,7 @@
   color: var(--text-main-color);
   font-size: 13px;
   text-align: center;
+  margin-bottom: 20px;
 
   @include tablet {
     text-align: left;
