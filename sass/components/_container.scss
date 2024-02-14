@@ -43,6 +43,12 @@
   }
 }
 
+.section-contacts {
+  @include tablet {
+    padding-bottom: 52px;
+  }
+}
+
 .container {
   width: 100%;
   margin: 0 auto;

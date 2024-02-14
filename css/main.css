@@ -354,6 +354,12 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section-contacts {
+    padding-bottom: 52px;
+  }
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -1298,49 +1304,93 @@ a {
 }
 
 .container-footer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 26px;
+}
+@media screen and (min-width: 768px) {
+  .container-footer {
+    padding-top: 18px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .list-agreements {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  gap: 80px;
+  gap: 7px;
+}
+@media screen and (min-width: 768px) {
+  .list-agreements {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    gap: 80px;
+  }
 }
 
 .link-agreement {
-  font-size: 24px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--link-color);
-  padding-top: 31px;
+  font-size: 11px;
+  display: block;
+}
+@media screen and (min-width: 1600px) {
+  .link-agreement {
+    font-size: 24px;
+    padding-top: 31px;
+  }
 }
 
 .container-footer:before {
+  width: 290px;
   content: "";
   position: absolute;
-  top: -22px;
+  top: 0;
   display: block;
-  width: 1338px;
   height: 1px;
   background-color: var(--line-psevdo-color);
 }
+@media screen and (min-width: 768px) {
+  .container-footer:before {
+    top: 0;
+    width: 698px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container-footer:before {
+    width: 1338px;
+  }
+}
 
 .logo {
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.5;
   text-decoration: none;
   font-weight: 400;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 36px;
+  }
 }
 
 .logo-begin {

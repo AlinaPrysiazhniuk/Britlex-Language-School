@@ -1,30 +1,58 @@
 .container-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 26px;
+
+  @include tablet {
+    padding-top: 18px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .list-agreements {
   display: inline-flex;
-  gap: 80px;
+  gap: 7px;
+  @include tablet {
+    display: inline-flex;
+    gap: 80px;
+  }
 }
 
 .link-agreement {
-  font-size: 24px;
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--link-color);
-  padding-top: 31px;
+  font-size: 11px;
+  display: block;
+
+  @include tablet {
+  }
+
+  @include desktop {
+    font-size: 24px;
+    padding-top: 31px;
+  }
 }
 
 .container-footer:before {
+  width: 290px;
   content: '';
   position: absolute;
-  top: -22px;
+  top: 0;
   display: block;
-  width: 1338px;
   height: 1px;
   background-color: var(--line-psevdo-color);
+
+  @include tablet {
+    top: 0;
+    width: 698px;
+  }
+  @include desktop {
+    width: 1338px;
+  }
 }
