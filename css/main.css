@@ -1025,6 +1025,11 @@ a {
     margin-bottom: 44px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .subtitle {
+    margin-bottom: 16px;
+  }
+}
 
 .pricing-price {
   background-color: var(--price-bg-color);
@@ -1105,63 +1110,191 @@ a {
 
 .contacts-title {
   font-weight: 600;
-  font-size: 48px;
-  line-height: 1.5;
   color: var(--title-section-main-color);
-  margin-bottom: 60px;
+  font-size: 24px;
+  line-height: 1.5;
+  position: absolute;
+  top: -50px;
+  left: 80px;
+}
+@media screen and (min-width: 768px) {
+  .contacts-title {
+    position: static;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contacts-title {
+    font-size: 48px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+}
+
+.contact-info {
+  width: 100%;
 }
 
 .contacts-info-details {
-  padding-right: 114px;
+  margin-right: 0;
+}
+@media screen and (min-width: 1600px) {
+  .contacts-info-details {
+    padding-right: 114px;
+  }
 }
 
 .container-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 144px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 38px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .container-contacts {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container-contacts {
+    gap: 144px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-img {
+    width: 253px;
+    height: 228px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contact-img {
+    width: 425px;
+    height: 430px;
+  }
 }
 
 .contacts-text {
   font-weight: 400;
-  font-size: 20px;
   line-height: 1.5;
   color: var(--text-main-color);
-  margin-bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 31px;
+}
+@media screen and (min-width: 768px) {
+  .contacts-text {
+    text-align: left;
+    padding-right: 114px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contacts-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding-right: 10px;
+  }
 }
 
 .contacts-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  gap: 17px;
+}
+@media screen and (min-width: 768px) {
+  .contacts-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 6px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .contacts-form {
+    gap: 30px;
+  }
 }
 
 .form-email {
-  width: 425px;
-  font-size: 16px;
-  line-height: 1.875;
+  width: 100%;
+  width: 291px;
   color: var(--text-main-color);
-  padding: 20px 30px;
-  border: 1px solid var(--button-border-color);
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: transparent;
+  border: 1px solid var(--button-border-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 26px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.875;
+}
+@media screen and (max-width: 387px) {
+  .form-email {
+    padding-right: 160px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-email {
+    width: 283px;
+    font-size: 12px;
+    padding-left: 24px;
+    line-height: 1.5;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .form-email {
+    width: 425px;
+    padding: 20px 30px;
+    font-size: 16px;
+    line-height: 1.875;
+    border-radius: 10px;
+  }
 }
 
 .form-button {
-  width: 312px;
-  font-size: 20px;
-  line-height: 1.5;
   font-weight: 500;
   color: var(--button-text-color);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: var(--bg-button-color);
-  padding: 20px 56px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
+  font-size: 14px;
+  padding: 20px 109.5px;
+}
+@media screen and (min-width: 768px) {
+  .form-button {
+    width: 145px;
+    font-size: 13px;
+    padding: 15px 39.5px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .form-button {
+    width: 312px;
+    font-size: 20px;
+    padding: 20px 56px;
+    border-radius: 10px;
+  }
 }
 
 .container-footer {

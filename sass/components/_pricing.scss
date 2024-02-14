@@ -83,6 +83,9 @@
   @include tablet {
     margin-bottom: 44px;
   }
+  @include desktop {
+    margin-bottom: 16px;
+  }
 }
 
 .pricing-price {
