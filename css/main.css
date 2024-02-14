@@ -925,7 +925,7 @@ a {
   line-height: 1.5;
   color: var(--title-section-main-color);
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .pricing-title {
@@ -963,12 +963,16 @@ a {
           justify-content: center;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
+  gap: 20px;
   width: 100%;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .pricing-item {
     height: 450px;
+    gap: 0px;
+    display: block;
+    position: relative;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -982,7 +986,7 @@ a {
   text-align: center;
   line-height: 1.5;
   color: var(--text-accent-color);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
   .pricing-title-block {
@@ -1018,7 +1022,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .subtitle {
-    margin-bottom: 48px;
+    margin-bottom: 44px;
   }
 }
 
@@ -1088,8 +1092,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .pricing-img {
-    width: 210px;
-    height: 210px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 1600px) {
