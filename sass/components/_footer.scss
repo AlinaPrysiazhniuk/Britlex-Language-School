@@ -11,6 +11,11 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .list-agreements {
@@ -28,14 +33,14 @@
   letter-spacing: 0.02em;
   color: var(--link-color);
   font-size: 11px;
-  display: block;
+  // display: block;
 
   @include tablet {
   }
 
   @include desktop {
     font-size: 24px;
-    padding-top: 31px;
+    // padding-top: 31px;
   }
 }
 

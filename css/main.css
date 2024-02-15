@@ -1328,6 +1328,16 @@ a {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 1600px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .list-agreements {
   display: -webkit-inline-box;
@@ -1350,12 +1360,10 @@ a {
   letter-spacing: 0.02em;
   color: var(--link-color);
   font-size: 11px;
-  display: block;
 }
 @media screen and (min-width: 1600px) {
   .link-agreement {
     font-size: 24px;
-    padding-top: 31px;
   }
 }
 
