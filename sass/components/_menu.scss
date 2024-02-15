@@ -70,7 +70,7 @@
     z-index: 1;
     width: 100vw;
     height: 100dvh;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-menu);
     padding-top: 20px;
     padding-right: 32px;
     padding-left: 32px;
@@ -118,7 +118,7 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 2.95;
-  color: var(--link-color);
+  color: var(--link-color-menu);
 
   @media screen and (min-width: 575px) {
     font-size: 24px;

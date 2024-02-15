@@ -30,8 +30,8 @@
   --bg-button-color: #263238;
   --link-color: #8f95a5;
   --line-psevdo-color: #c4c4c4;
-  --bg-color: #ffffff;
-  --link-color: #263238;
+  --bg-color-menu: #ffffff;
+  --link-color-menu: #263238;
   --main-font-family: Poppins, Times New Roman, Arial, Helvetica;
 }
 
@@ -1496,7 +1496,7 @@ a {
     z-index: 1;
     width: 100vw;
     height: 100dvh;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color-menu);
     padding-top: 20px;
     padding-right: 32px;
     padding-left: 32px;
@@ -1557,7 +1557,7 @@ a {
   font-weight: 500;
   font-size: 22px;
   line-height: 2.95;
-  color: var(--link-color);
+  color: var(--link-color-menu);
 }
 @media screen and (min-width: 575px) {
   .mob-link {
