@@ -43,7 +43,7 @@
   }
 }
 
-.container--mob {
+.container-mob {
   display: none;
   height: 100%;
 
@@ -70,7 +70,7 @@
     z-index: 1;
     width: 100vw;
     height: 100dvh;
-    background-color: var(--background-primary-color);
+    background-color: var(--bg-color);
     padding-top: 20px;
     padding-right: 32px;
     padding-left: 32px;
@@ -88,7 +88,7 @@
 }
 
 .logo-mob-menu {
-  @media screen and (min-width: 469px) {
+  @media screen and (min-width: 575px) {
     display: none;
   }
 }
@@ -98,9 +98,7 @@
 }
 
 .logo-tablet-menu {
-  position: absolute;
-  left: 32px;
-  @media screen and (min-width: 1599px) {
+  @media screen and (max-width: 574px) {
     display: none;
   }
 }
@@ -117,27 +115,17 @@
 }
 
 .mob-link {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.22;
-  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 2.95;
+  color: var(--link-color);
 
-  &:hover {
-    color: var(--second-text-color);
-    cursor: var(--cursor-hover);
+  @media screen and (min-width: 575px) {
+    font-size: 24px;
+    line-height: 2.7;
   }
 
-  @include mobile {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 1.23;
-  }
-
-  @media screen and (max-width: 308px) {
-    font-size: 10vw;
-  }
-
-  @media screen and (max-width: 259px) {
-    font-size: 8vw;
+  @include tablet {
+    font-size: 22px;
   }
 }

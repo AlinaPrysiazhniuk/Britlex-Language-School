@@ -30,6 +30,8 @@
   --bg-button-color: #263238;
   --link-color: #8f95a5;
   --line-psevdo-color: #c4c4c4;
+  --bg-color: #ffffff;
+  --link-color: #263238;
   --main-font-family: Poppins, Times New Roman, Arial, Helvetica;
 }
 
@@ -1459,12 +1461,12 @@ a {
   }
 }
 
-.container--mob {
+.container-mob {
   display: none;
   height: 100%;
 }
 @media screen and (max-width: 1599px) {
-  .container--mob {
+  .container-mob {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1494,7 +1496,7 @@ a {
     z-index: 1;
     width: 100vw;
     height: 100dvh;
-    background-color: var(--background-primary-color);
+    background-color: var(--bg-color);
     padding-top: 20px;
     padding-right: 32px;
     padding-left: 32px;
@@ -1516,7 +1518,7 @@ a {
   }
 }
 
-@media screen and (min-width: 469px) {
+@media screen and (min-width: 575px) {
   .logo-mob-menu {
     display: none;
   }
@@ -1526,11 +1528,7 @@ a {
   position: absolute;
 }
 
-.logo-tablet-menu {
-  position: absolute;
-  left: 32px;
-}
-@media screen and (min-width: 1599px) {
+@media screen and (max-width: 574px) {
   .logo-tablet-menu {
     display: none;
   }
@@ -1556,30 +1554,20 @@ a {
 }
 
 .mob-link {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.22;
-  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 2.95;
+  color: var(--link-color);
 }
-.mob-link:hover {
-  color: var(--second-text-color);
-  cursor: var(--cursor-hover);
-}
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 575px) {
   .mob-link {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 1.23;
+    font-size: 24px;
+    line-height: 2.7;
   }
 }
-@media screen and (max-width: 308px) {
+@media screen and (min-width: 768px) {
   .mob-link {
-    font-size: 10vw;
-  }
-}
-@media screen and (max-width: 259px) {
-  .mob-link {
-    font-size: 8vw;
+    font-size: 22px;
   }
 }
 
