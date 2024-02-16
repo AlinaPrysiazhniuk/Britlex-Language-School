@@ -424,7 +424,7 @@ a {
   .skills-title-block {
     font-size: 20px;
     line-height: 1.5;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -540,12 +540,12 @@ a {
 @media screen and (min-width: 1600px) {
   .block-writing {
     padding-right: 50px;
+    margin-bottom: 33px;
   }
 }
 
 .skills-block-speaking {
   background-color: var(--bg-color);
-  height: auto;
   border-radius: 10px;
   padding-left: 16px;
   padding-right: 16px;
@@ -556,6 +556,7 @@ a {
 @media screen and (min-width: 768px) {
   .skills-block-speaking {
     width: 224px;
+    height: 662px;
     margin-bottom: 0;
     padding-top: 30px;
   }
@@ -567,6 +568,7 @@ a {
     padding-bottom: 154px;
     padding-left: 18px;
     padding-right: 18px;
+    height: 947px;
   }
 }
 
@@ -582,10 +584,10 @@ a {
 }
 @media screen and (min-width: 768px) {
   .skills-block-writing {
-    width: 224px;
+    width: 227px;
     height: 441px;
     padding-top: 14px;
-    padding-bottom: 27px;
+    padding-bottom: 17px;
     margin-bottom: 0;
   }
 }
@@ -609,7 +611,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .skills-block-reading {
-    width: 224px;
+    width: 228px;
     height: 441px;
     margin-bottom: 0;
   }
@@ -623,17 +625,29 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .skills-title-reading {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .skills-title-reading {
+    margin-top: 23px;
+  }
+}
+
 .block-reading {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .block-reading {
-    margin-bottom: 13px;
+    margin-bottom: 23px;
   }
 }
 @media screen and (min-width: 1600px) {
   .block-reading {
     padding-right: 31px;
+    margin-bottom: 32px;
   }
 }
 
@@ -646,7 +660,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 13px;
+    gap: 10px;
     position: relative;
   }
 }
@@ -729,6 +743,14 @@ a {
 @media screen and (min-width: 1600px) {
   .block-listening {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img-reading {
+    margin-bottom: 20px;
+    width: 216px;
+    height: 144px;
   }
 }
 
@@ -1005,11 +1027,26 @@ a {
 @media screen and (min-width: 768px) {
   .subtitle {
     margin-bottom: 44px;
+    margin-top: 42px;
   }
 }
 @media screen and (min-width: 1600px) {
   .subtitle {
     margin-bottom: 16px;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle-pricing3 {
+    margin-bottom: 44px;
+    margin-top: -13px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .subtitle-pricing3 {
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 }
 

@@ -82,9 +82,23 @@
 .subtitle {
   @include tablet {
     margin-bottom: 44px;
+    margin-top: 42px;
   }
   @include desktop {
     margin-bottom: 16px;
+    margin-top: 32px;
+  }
+}
+
+.subtitle-pricing3 {
+  @include tablet {
+    margin-bottom: 44px;
+    margin-top: -13px;
+  }
+
+  @include desktop {
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 }
 

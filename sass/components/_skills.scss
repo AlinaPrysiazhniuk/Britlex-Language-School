@@ -24,7 +24,7 @@
   @include tablet {
     font-size: 20px;
     line-height: 1.5;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   @include desktop {
@@ -124,12 +124,13 @@
   }
   @include desktop {
     padding-right: 50px;
+    margin-bottom: 33px;
   }
 }
 
 .skills-block-speaking {
   background-color: var(--bg-color);
-  height: auto;
+
   border-radius: 10px;
   padding-left: 16px;
   padding-right: 16px;
@@ -139,6 +140,7 @@
 
   @include tablet {
     width: 224px;
+    height: 662px;
     margin-bottom: 0;
     padding-top: 30px;
   }
@@ -149,6 +151,7 @@
     padding-bottom: 154px;
     padding-left: 18px;
     padding-right: 18px;
+    height: 947px;
   }
 }
 
@@ -163,10 +166,10 @@
   margin-bottom: 21px;
 
   @include tablet {
-    width: 224px;
+    width: 227px;
     height: 441px;
     padding-top: 14px;
-    padding-bottom: 27px;
+    padding-bottom: 17px;
     margin-bottom: 0;
   }
 
@@ -188,7 +191,7 @@
   margin-bottom: 21px;
 
   @include tablet {
-    width: 224px;
+    width: 228px;
     height: 441px;
     margin-bottom: 0;
   }
@@ -201,13 +204,24 @@
   }
 }
 
+.skills-title-reading {
+  @include tablet {
+    margin-top: 60px;
+  }
+
+  @include desktop {
+    margin-top: 23px;
+  }
+}
+
 .block-reading {
   margin-bottom: 30px;
   @include tablet {
-    margin-bottom: 13px;
+    margin-bottom: 23px;
   }
   @include desktop {
     padding-right: 31px;
+    margin-bottom: 32px;
   }
 }
 
@@ -216,7 +230,7 @@
   @include tablet {
     margin-bottom: 0;
     display: flex;
-    gap: 13px;
+    gap: 10px;
     position: relative;
   }
 
@@ -312,3 +326,11 @@
 //     height: 390px;
 //   }
 // }
+
+.img-reading {
+  @include tablet {
+    margin-bottom: 20px;
+    width: 216px;
+    height: 144px;
+  }
+}
