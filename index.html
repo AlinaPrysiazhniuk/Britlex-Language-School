@@ -163,7 +163,11 @@
               "
               media="(max-width: 768px)"
             />
-            <img src="./images/hero-img.jpg" alt="hero" />
+            <img
+              src="./images/hero/hero-mobile-1x.jpg"
+              alt="hero"
+              class="hero-img"
+            />
           </picture>
 
           <div class="hero-info">
@@ -192,13 +196,35 @@
           <h2 class="skills-title">Skills</h2>
           <div class="skills-blocks">
             <div class="skills-block-speaking">
-              <img
-                src="./images/skills/speaking.jpg"
-                alt="speaking"
-                width="213"
-                height="213"
-                class="skills-img img-speaking"
-              />
+              <picture class="skills-img img-speaking">
+                <source
+                  srcset="
+                    ./images/skills/speaking-desktop-1x.png 1x,
+                    ./images/skills/speaking-desktop-2x.png 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+                <source
+                  srcset="
+                    ./images/skills/speaking-tablet-1x.png 1x,
+                    ./images/skills/speaking-tablet-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/skills/speaking-mobile-1x.png 1x,
+                    ./images/skills/speaking-mobile-2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/skills/speaking-mobile-1x.png"
+                  alt="speaking"
+                  class="skills-img img-speaking"
+                />
+              </picture>
+
               <h3 class="skills-title-block">Speaking</h3>
               <div class="skills-text">
                 <p class="skills-text-block block-2">
