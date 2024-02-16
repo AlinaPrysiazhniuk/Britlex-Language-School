@@ -364,13 +364,36 @@
         <div class="container about-container">
           <div class="about-block">
             <h2 class="about-title">About Us</h2>
-            <img
-              src="./images/about.jpg"
-              alt="about"
-              width="283"
-              height="283"
-              class="about-img"
-            />
+
+            <picture class="about-img">
+              <source
+                srcset="
+                  ./images/about/about-us-desktop-1x.png 1x,
+                  ./images/about/about-us-desktop-2x.png 2x
+                "
+                media="(min-width: 1600px)"
+              />
+              <source
+                srcset="
+                  ./images/about/about-us-tablet-1x.png 1x,
+                  ./images/about/about-us-tablet-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/about/about-us-mobile-1x.png 1x,
+                  ./images/about/about-us-mobile-2x.png 2x
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./images/about/about-us-mobile-1x.png"
+                alt="about us"
+                class="skills-img img-writing"
+              />
+            </picture>
+
             <div class="about-info">
               <p class="about-text">
                 The model offers a framework for discussing problems related to
@@ -410,13 +433,35 @@
           <h2 class="pricing-title">Pricing</h2>
           <div class="pricing-list">
             <div class="pricing-item">
-              <img
-                src="./images/pricing/pricing-1.jpg"
-                alt="pricing-3"
-                width="248"
-                height="248"
-                class="pricing-img"
-              />
+              <picture class="pricing-img">
+                <source
+                  srcset="
+                    ./images/pricing/pricing1-desktop-1x.png 1x,
+                    ./images/pricing/pricing1-desktop-2x.png 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+                <source
+                  srcset="
+                    ./images/pricing/pricing1-tablet-1x.png 1x,
+                    ./images/pricing/pricing1-tablet-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/pricing/pricing1-mobile-1x.png 1x,
+                    ./images/pricing/pricing1-mobile-2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/pricing/pricing1-mobile-1x.png"
+                  alt="pricing-1"
+                  class="pricing-img"
+                />
+              </picture>
+
               <div class="pricing-info">
                 <h3 class="pricing-title-block">Self-study online course</h3>
                 <p class="pricing-text">
@@ -430,13 +475,34 @@
               </div>
             </div>
             <div class="pricing-item">
-              <img
-                src="./images/pricing/pricing-2.jpg"
-                alt="pricing-1"
-                width="248"
-                height="248"
-                class="pricing-img"
-              />
+              <picture class="pricing-img">
+                <source
+                  srcset="
+                    ./images/pricing/pricing2-desktop-1x.png 1x,
+                    ./images/pricing/pricing2-desktop-2x.png 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+                <source
+                  srcset="
+                    ./images/pricing/pricing2-tablet-1x.png 1x,
+                    ./images/pricing/pricing2-tablet-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/pricing/pricing2-mobile-1x.png 1x,
+                    ./images/pricing/pricing2-mobile-2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/pricing/pricing2-mobile-1x.png"
+                  alt="pricing-2"
+                  class="pricing-img"
+                />
+              </picture>
               <div class="pricing-info">
                 <h3 class="pricing-title-block subtitle">
                   Live online classes
@@ -452,13 +518,35 @@
               </div>
             </div>
             <div class="pricing-item">
-              <img
-                src="./images/pricing/pricing-3.jpg"
-                alt="pricing-2"
-                width="248"
-                height="248"
-                class="pricing-img"
-              />
+              <picture class="pricing-img">
+                <source
+                  srcset="
+                    ./images/pricing/pricing3-desktop-1x.png 1x,
+                    ./images/pricing/pricing3-desktop-2x.png 2x
+                  "
+                  media="(min-width: 1600px)"
+                />
+                <source
+                  srcset="
+                    ./images/pricing/pricing3-tablet-1x.png 1x,
+                    ./images/pricing/pricing13tablet-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/pricing/pricing3-mobile-1x.png 1x,
+                    ./images/pricing/pricing3-mobile-2x.png 2x
+                  "
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/pricing/pricing3-mobile-1x.png"
+                  alt="pricing-3"
+                  class="pricing-img"
+                />
+              </picture>
+
               <div class="pricing-info">
                 <h3 class="pricing-title-block subtitle">Personal Tuition</h3>
                 <p class="pricing-text">
