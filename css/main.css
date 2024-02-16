@@ -32,6 +32,7 @@
   --line-psevdo-color: #c4c4c4;
   --bg-color-menu: #ffffff;
   --link-color-menu: #263238;
+  --btn-color-menu: #39515e;
   --main-font-family: Poppins, Times New Roman, Arial, Helvetica;
 }
 
@@ -1414,13 +1415,16 @@ a {
   position: absolute;
   background-color: transparent;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   padding: 0;
+  fill: var(--btn-color-menu);
 }
 @media screen and (min-width: 1600px) {
   .mob {
     display: none;
+    width: 39px;
+    height: 39px;
   }
 }
 
@@ -1436,8 +1440,8 @@ a {
 }
 
 .mob-open {
-  bottom: 5;
-  right: 20px;
+  top: 37px;
+  right: 15px;
 }
 @media screen and (min-width: 768px) {
   .mob-open {
@@ -1447,13 +1451,25 @@ a {
 
 .mob-close {
   position: absolute;
-  top: 16px;
-  right: 20px;
+  top: 37px;
+  right: 15px;
   background-color: transparent;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   padding: 0;
+}
+@media screen and (min-width: 575px) {
+  .mob-close {
+    top: 37px;
+    right: 20px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .mob-close {
+    top: 37px;
+    right: 20px;
+  }
 }
 @media screen and (min-width: 1600px) {
   .mob-close {
@@ -1465,7 +1481,7 @@ a {
   display: none;
   height: 100%;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1600px) {
   .container-mob {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1480,12 +1496,18 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 574px) {
   .mob-menu {
-    padding-top: 12px;
-    padding-bottom: 64px;
-    padding-right: 20px;
-    padding-left: 32px;
+    padding-top: 35px;
+    padding-right: 6px;
+    padding-left: 14px;
+  }
+}
+@media screen and (max-width: 766) {
+  .mob-menu {
+    padding-top: 48px;
+    padding-left: 33px;
+    padding-right: 23px;
   }
 }
 @media screen and (max-width: 1599px) {
@@ -1496,10 +1518,10 @@ a {
     z-index: 1;
     width: 100vw;
     height: 100dvh;
-    background-color: var(--bg-color-menu);
-    padding-top: 20px;
-    padding-right: 32px;
-    padding-left: 32px;
+    background-color: rgb(76, 127, 59);
+    padding-top: 39px;
+    padding-right: 16px;
+    padding-left: 39px;
     -webkit-transform: translateX(1000%);
             transform: translateX(1000%);
     -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1518,19 +1540,44 @@ a {
   }
 }
 
+.logo-mob-menu {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
 @media screen and (min-width: 575px) {
   .logo-mob-menu {
     display: none;
   }
 }
 
-.logo-mob-menu {
+.logo-mob-menu,
+.logo-tablet-menu {
   position: absolute;
+  left: 35px;
+}
+
+.logo-mob-begin,
+.logo-tablet-begin {
+  color: var(--logo-first-color);
+}
+
+.logo-mob-end,
+.logo-tablet-end {
+  color: var(--logo-second-color);
 }
 
 @media screen and (max-width: 574px) {
   .logo-tablet-menu {
     display: none;
+  }
+}
+@media screen and (min-width: 575px) {
+  .logo-tablet-menu {
+    display: block;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.5;
   }
 }
 
@@ -1568,6 +1615,17 @@ a {
 @media screen and (min-width: 768px) {
   .mob-link {
     font-size: 22px;
+  }
+}
+
+.mob-icon-close {
+  width: 32px;
+  height: 32px;
+}
+@media screen and (min-width: 575px) {
+  .mob-icon-close {
+    width: 39px;
+    height: 39px;
   }
 }
 

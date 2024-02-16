@@ -2,11 +2,14 @@
   position: absolute;
   background-color: transparent;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   padding: 0;
+  fill: var(--btn-color-menu);
   @include desktop {
     display: none;
+    width: 39px;
+    height: 39px;
   }
 }
 
@@ -21,8 +24,8 @@
 }
 
 .mob-open {
-  bottom: 5;
-  right: 20px;
+  top: 37px;
+  right: 15px;
   @include tablet {
     right: 204px;
   }
@@ -30,14 +33,22 @@
 
 .mob-close {
   position: absolute;
-  top: 16px;
-  right: 20px;
+  top: 37px;
+  right: 15px;
   background-color: transparent;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   padding: 0;
 
+  @media screen and (min-width: 575px) {
+    top: 37px;
+    right: 20px;
+  }
+  @media screen and (min-width: 767px) {
+    top: 37px;
+    right: 20px;
+  }
   @include desktop {
     display: none;
   }
@@ -47,7 +58,7 @@
   display: none;
   height: 100%;
 
-  @media screen and (max-width: 1599px) {
+  @media screen and (max-width: 1600px) {
     display: flex;
     flex-direction: column;
     padding-left: 0;
@@ -57,12 +68,17 @@
 }
 
 .mob-menu {
-  @media screen and (max-width: 768px) {
-    padding-top: 12px;
-    padding-bottom: 64px;
-    padding-right: 20px;
-    padding-left: 32px;
+  @media screen and (max-width: 574px) {
+    padding-top: 35px;
+    padding-right: 6px;
+    padding-left: 14px;
   }
+  @media screen and (max-width: 766) {
+    padding-top: 48px;
+    padding-left: 33px;
+    padding-right: 23px;
+  }
+
   @media screen and (max-width: 1599px) {
     position: fixed;
     top: 0;
@@ -70,10 +86,12 @@
     z-index: 1;
     width: 100vw;
     height: 100dvh;
-    background-color: var(--bg-color-menu);
-    padding-top: 20px;
-    padding-right: 32px;
-    padding-left: 32px;
+    // background-color: var(--bg-color-menu);
+    background-color: rgb(76, 127, 59);
+    padding-top: 39px;
+    // padding-bottom: 64px;
+    padding-right: 16px;
+    padding-left: 39px;
     transform: translateX(1000%);
     transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -88,18 +106,41 @@
 }
 
 .logo-mob-menu {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+
   @media screen and (min-width: 575px) {
     display: none;
   }
 }
 
-.logo-mob-menu {
+.logo-mob-menu,
+.logo-tablet-menu {
   position: absolute;
+  left: 35px;
+}
+
+.logo-mob-begin,
+.logo-tablet-begin {
+  color: var(--logo-first-color);
+}
+
+.logo-mob-end,
+.logo-tablet-end {
+  color: var(--logo-second-color);
 }
 
 .logo-tablet-menu {
   @media screen and (max-width: 574px) {
     display: none;
+  }
+
+  @media screen and (min-width: 575px) {
+    display: block;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.5;
   }
 }
 
@@ -127,5 +168,15 @@
 
   @include tablet {
     font-size: 22px;
+  }
+}
+
+.mob-icon-close {
+  width: 32px;
+  height: 32px;
+
+  @media screen and (min-width: 575px) {
+    width: 39px;
+    height: 39px;
   }
 }

@@ -22,11 +22,10 @@
   <body>
     <header class="header section section-header">
       <div class="container header-container">
+        <a href="/" lang="en" class="logo logo-begin"
+          >Brit<span class="logo-end">lex</span>
+        </a>
         <nav class="navigation">
-          <a href="/" lang="en" class="logo logo-begin"
-            >Brit<span class="logo-end">lex</span>
-          </a>
-
           <ul class="page-list">
             <li class="page-item">
               <a href="/index.html" class="page-link">Home</a>
@@ -46,8 +45,6 @@
           </ul>
         </nav>
 
-        <button type="button" class="header-button">Let's Talk</button>
-
         <!-- mob-menu -->
         <button
           type="button"
@@ -55,11 +52,14 @@
           aria-expanded="false"
           aria-controls="container-mob"
         >
-          Open
+          <!-- Open -->
           <svg class="mob-icon-open" width="32" height="32">
-            <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
+            <use href="/images/symbol-defs.svg#icon-open"></use>
           </svg>
         </button>
+
+        <button type="button" class="header-button">Let's Talk</button>
+
         <div class="mob-menu js-menu-container" id="container-mob">
           <div class="container container-mob">
             <a
@@ -80,9 +80,8 @@
               type="button"
               class="mob mob-close menu-toggle js-close-menu"
             >
-              Close
               <svg class="mob-icon-close" width="19" height="19">
-                <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
+                <use href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
 
