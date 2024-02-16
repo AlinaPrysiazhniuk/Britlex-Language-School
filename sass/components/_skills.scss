@@ -68,15 +68,15 @@
 
 .skills-img {
   margin-bottom: 20px;
+  // width: 200px;
+  // height: 200px;
 
   @include tablet {
-    width: 200px;
-    height: 200px;
     margin-bottom: 10px;
   }
   @include desktop {
-    width: 390px;
-    height: 264px;
+    // width: 390px;
+    // height: 264px;
     margin-bottom: 24px;
   }
 }
@@ -290,25 +290,25 @@
   }
 }
 
-.img-writing {
-  @include tablet {
-    width: 200px;
-    height: 200px;
-  }
-  @include desktop {
-    width: 390px;
-    height: 264px;
-  }
-}
+// .img-writing {
+//   @include tablet {
+//     width: 200px;
+//     height: 200px;
+//   }
+//   @include desktop {
+//     width: 390px;
+//     height: 264px;
+//   }
+// }
 
-.img-speaking {
-  @include tablet {
-    margin-bottom: 25px;
-    width: 214px;
-    height: 214px;
-  }
-  @include desktop {
-    width: 390px;
-    height: 390px;
-  }
-}
+// .img-speaking {
+//   @include tablet {
+//     margin-bottom: 25px;
+//     width: 214px;
+//     height: 214px;
+//   }
+//   @include desktop {
+//     width: 390px;
+//     height: 390px;
+//   }
+// }

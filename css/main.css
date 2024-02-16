@@ -58,7 +58,6 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -482,15 +481,11 @@ a {
 }
 @media screen and (min-width: 768px) {
   .skills-img {
-    width: 200px;
-    height: 200px;
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1600px) {
   .skills-img {
-    width: 390px;
-    height: 264px;
     margin-bottom: 24px;
   }
 }
@@ -734,33 +729,6 @@ a {
 @media screen and (min-width: 1600px) {
   .block-listening {
     margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .img-writing {
-    width: 200px;
-    height: 200px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .img-writing {
-    width: 390px;
-    height: 264px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .img-speaking {
-    margin-bottom: 25px;
-    width: 214px;
-    height: 214px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .img-speaking {
-    width: 390px;
-    height: 390px;
   }
 }
 
