@@ -529,7 +529,7 @@
                 <source
                   srcset="
                     ./images/pricing/pricing3-tablet-1x.png 1x,
-                    ./images/pricing/pricing13tablet-2x.png 2x
+                    ./images/pricing/pricing3-tablet-2x.png 2x
                   "
                   media="(min-width: 768px)"
                 />
@@ -565,13 +565,35 @@
 
       <section id="contacts" class="contacts section section-contacts">
         <div class="container container-contacts">
-          <img
-            src="./images/contact.jpg"
-            alt="contact"
-            width="253"
-            height="228"
-            class="contact-img"
-          />
+          <picture class="contact-img">
+            <source
+              srcset="
+                ./images/contacts/contact-desktop-1x.png 1x,
+                ./images/contacts/contact-desktop-2x.png 2x
+              "
+              media="(min-width: 1600px)"
+            />
+            <source
+              srcset="
+                ./images/contacts/contact-tablet-1x.png 1x,
+                ./images/contacts/contact-tablet-2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/contacts/contact-mobile-1x.png 1x,
+                ./images/contacts/contact-mobile-2x.png 2x
+              "
+              media="(max-width: 768px)"
+            />
+            <img
+              src="./images/contacts/contact-mobile-1x.png"
+              alt="contacts"
+              class="contact-img"
+            />
+          </picture>
+
           <div class="contacts-info">
             <div class="contacts-info-details">
               <h2 class="contacts-title">Contact Us</h2>
