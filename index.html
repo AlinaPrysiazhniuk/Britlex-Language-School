@@ -51,6 +51,7 @@
           class="mob mob-open js-open-menu mobile-menu-button"
           aria-expanded="false"
           aria-controls="container-mob"
+          aria-label="Open"
         >
           <!-- Open -->
           <svg class="mob-icon-open" width="32" height="32">
@@ -58,7 +59,9 @@
           </svg>
         </button>
 
-        <button type="button" class="header-button">Let's Talk</button>
+        <button type="button" class="header-button" aria-label="Lets talk">
+          Let's Talk
+        </button>
 
         <div class="mob-menu js-menu-container" id="container-mob">
           <div class="container-mob">
@@ -79,6 +82,7 @@
             <button
               type="button"
               class="mob mob-close menu-toggle js-close-menu"
+              aria-label="Close"
             >
               <svg class="mob-icon-close" width="19" height="19">
                 <use href="./images/symbol-defs.svg#icon-close"></use>
@@ -111,7 +115,9 @@
               </ul>
             </div>
 
-            <button type="button" class="btn-talk">Let's talk</button>
+            <button type="button" class="btn-talk" aria-label="Lets talk">
+              Let's talk
+            </button>
           </div>
         </div>
         <!-- menu mob -->
@@ -142,7 +148,9 @@
               With our teachers who write a program for each student, you will
               be able to make your first sketch after the first lesson.
             </p>
-            <button type="button" class="hero-button">Get started</button>
+            <button type="button" class="hero-button" aria-label="Start">
+              Get started
+            </button>
           </div>
         </div>
       </section>
@@ -368,7 +376,13 @@
                   class="form-email"
                   placeholder="Enter Your E-mail"
                 />
-                <button type="submit" class="form-button">Subscribe</button>
+                <button
+                  type="submit"
+                  class="form-button"
+                  aria-label="Subscribe"
+                >
+                  Subscribe
+                </button>
               </div>
             </form>
           </div>
