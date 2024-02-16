@@ -87,16 +87,9 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 1600px) {
   .header-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     position: relative;
   }
 }
