@@ -1461,7 +1461,7 @@ a {
 
 .mob-close {
   position: absolute;
-  top: 37px;
+  top: 39px;
   right: 15px;
   background-color: transparent;
   border: none;
@@ -1471,13 +1471,13 @@ a {
 }
 @media screen and (min-width: 575px) {
   .mob-close {
-    top: 37px;
+    top: 39px;
     right: 20px;
   }
 }
 @media screen and (min-width: 767px) {
   .mob-close {
-    top: 37px;
+    top: 39px;
     right: 20px;
   }
 }
@@ -1623,6 +1623,7 @@ a {
   padding: 0;
   width: 291px;
   height: 65px;
+  padding: 17.5px 101px;
 }
 @media screen and (min-width: 575px) {
   .btn-talk {

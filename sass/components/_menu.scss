@@ -41,7 +41,7 @@
 
 .mob-close {
   position: absolute;
-  top: 37px;
+  top: 39px;
   right: 15px;
   background-color: transparent;
   border: none;
@@ -50,11 +50,11 @@
   padding: 0;
 
   @media screen and (min-width: 575px) {
-    top: 37px;
+    top: 39px;
     right: 20px;
   }
   @media screen and (min-width: 767px) {
-    top: 37px;
+    top: 39px;
     right: 20px;
   }
   @include desktop {
@@ -185,6 +185,7 @@
   padding: 0;
   width: 291px;
   height: 65px;
+  padding: 17.5px 101px;
 
   // position: absolute;
   // bottom: 0;
