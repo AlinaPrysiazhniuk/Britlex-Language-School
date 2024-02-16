@@ -1,9 +1,13 @@
 .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   @include desktop {
     display: flex;
     align-items: center;
     position: relative;
   }
+  outline: 1px solid red;
 }
 
 .navigation {

@@ -34,9 +34,14 @@
 .mob-open {
   top: 37px;
   right: 15px;
-  @include tablet {
-    right: 204px;
-  }
+  position: static;
+  // @media screen and (max-width: 574px) {
+
+  // }
+
+  // @include tablet {
+  //   right: 204px;
+  // }
 }
 
 .mob-close {
@@ -186,10 +191,6 @@
   width: 291px;
   height: 65px;
   padding: 17.5px 101px;
-
-  // position: absolute;
-  // bottom: 0;
-  // left: 14px;
 
   @media screen and (min-width: 575px) {
     width: 330px;

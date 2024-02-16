@@ -77,6 +77,18 @@ a {
   cursor: pointer;
 }
 
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: 1px solid red;
+}
 @media screen and (min-width: 1600px) {
   .header-container {
     display: -webkit-box;
@@ -1452,11 +1464,7 @@ a {
 .mob-open {
   top: 37px;
   right: 15px;
-}
-@media screen and (min-width: 768px) {
-  .mob-open {
-    right: 204px;
-  }
+  position: static;
 }
 
 .mob-close {
