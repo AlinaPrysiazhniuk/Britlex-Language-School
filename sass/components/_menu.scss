@@ -35,13 +35,6 @@
   top: 37px;
   right: 40px;
   position: static;
-  // @media screen and (max-width: 574px) {
-
-  // }
-
-  // @include tablet {
-  //   right: 204px;
-  // }
 }
 
 .mob-close {
@@ -112,6 +105,20 @@
   @include desktop {
     display: none;
   }
+}
+
+.menu-top {
+  position: relative;
+}
+
+.menu-top:before {
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--line-psevdo-color);
+  content: '';
+  position: absolute;
+  top: 20px;
 }
 
 .logo-mob-menu {
