@@ -66,61 +66,71 @@
           Let's Talk
         </button>
 
-        <div class="mob-menu js-menu-container" id="container-mob">
-          <div class="container-mob">
-            <a
-              lang="en"
-              href="./index.html"
-              class="logo-mob-menu logo-mob-begin"
-            >
-              Brit<span class="logo-mob-end">lex</span>
-            </a>
-            <a
-              lang="en"
-              href="./index.html"
-              class="logo-tablet-menu logo-tablet-begin"
-            >
-              Brit<span class="logo-tablet-end">lex</span>
-            </a>
-            <button
-              type="button"
-              class="mob mob-close menu-toggle js-close-menu"
-              aria-label="Close"
-            >
-              <svg class="mob-icon-close" width="19" height="19">
-                <use href="./images/symbol-defs.svg#icon-close"></use>
-              </svg>
-            </button>
+        <div class="backdrop is-hidden">
+          <div class="mob-menu js-menu-container" id="container-mob">
+            <div class="container-mob">
+              <a
+                lang="en"
+                href="./index.html"
+                class="logo-mob-menu logo-mob-begin"
+              >
+                Brit<span class="logo-mob-end">lex</span>
+              </a>
+              <a
+                lang="en"
+                href="./index.html"
+                class="logo-tablet-menu logo-tablet-begin"
+              >
+                Brit<span class="logo-tablet-end">lex</span>
+              </a>
+              <button
+                type="button"
+                class="mob mob-close menu-toggle js-close-menu"
+                aria-label="Close"
+              >
+                <svg class="mob-icon-close" width="19" height="19">
+                  <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+              </button>
 
-            <div class="menu-top">
-              <ul class="mob-list menu-list">
-                <li class="mob-item">
-                  <a href="./index.html" class="mob-link mob-link-current"
-                    >Home</a
-                  >
-                </li>
-                <li class="mob-item">
-                  <a href="#skills" class="mob-link mobile-nav-link">Skills</a>
-                </li>
-                <li class="mob-item">
-                  <a href="#about" class="mob-link mobile-nav-link">About Us</a>
-                </li>
-                <li class="mob-item">
-                  <a href="#pricing" class="mob-link mobile-nav-link"
-                    >Pricing</a
-                  >
-                </li>
-                <li class="mob-item">
-                  <a href="#contacts" class="mob-link mobile-nav-link"
-                    >Contacts</a
-                  >
-                </li>
-              </ul>
+              <div class="menu-top">
+                <ul class="mob-list menu-list">
+                  <li class="mob-item">
+                    <a href="./index.html" class="mob-link mob-link-current"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="mob-item">
+                    <a href="#skills" class="mob-link mobile-nav-link"
+                      >Skills</a
+                    >
+                  </li>
+                  <li class="mob-item">
+                    <a href="#about" class="mob-link mobile-nav-link"
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="mob-item">
+                    <a href="#pricing" class="mob-link mobile-nav-link"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li class="mob-item">
+                    <a href="#contacts" class="mob-link mobile-nav-link"
+                      >Contacts</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                type="button"
+                class="btn-talk mobile-menu-btn"
+                aria-label="Lets talk"
+              >
+                Let's talk
+              </button>
             </div>
-
-            <button type="button" class="btn-talk" aria-label="Lets talk">
-              Let's talk
-            </button>
           </div>
         </div>
         <!-- menu mob -->
@@ -647,6 +657,7 @@
     </main>
 
     <script src="./js/menu.js"></script>
+    <!-- <script src="./js/backdop.js"></script> -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

@@ -2,8 +2,7 @@
 @import './utils/mixins';
 @import './base/reset';
 @import './base/common';
-// @import "./utils/hide";
-// @import "./utils/hidden";
+@import './utils/hidden';
 @import './components/header';
 @import './components/hero';
 @import './components/container';
@@ -13,10 +12,5 @@
 @import './components/contacts';
 @import './components/footer';
 @import './components/menu';
-// @import './components/features';
 @import './components/logo-footer';
 @import './components/logo-header';
-// @import './components/form-footer';
-// @import './components/portfolio-filters';
-// @import './components/portfolio-projects';
-// @import './components/mob-menu';

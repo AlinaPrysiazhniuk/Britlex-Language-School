@@ -4,11 +4,19 @@
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const closeMenuLink = document.querySelectorAll('.mobile-nav-link');
   const letsTalkBtn = document.querySelector('.mobile-menu-button');
+  const openBackdrop = document.querySelector('.backdrop');
+
+  // function toggleModal() {
+  //   openBackdrop.classList.toggle('is-hidden');
+  // }
+
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    openBackdrop.classList.toggle('is-hidden');
+
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
