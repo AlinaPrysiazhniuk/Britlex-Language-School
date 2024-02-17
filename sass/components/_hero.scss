@@ -1,3 +1,14 @@
+.hero {
+  padding-top: 70px;
+  @include tablet {
+    padding-top: 100px;
+  }
+
+  @include desktop {
+    padding-top: 160px;
+  }
+}
+
 .hero-title {
   font-weight: 600;
   line-height: 1.25;

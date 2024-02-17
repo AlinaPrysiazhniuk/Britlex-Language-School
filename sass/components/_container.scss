@@ -4,16 +4,16 @@
 }
 
 .section-header {
-  padding-top: 36px;
-  padding-bottom: 29px;
+  padding-top: 26px;
+  // padding-bottom: 29px;
 
   @include tablet {
-    padding-top: 39px;
-    padding-bottom: 40px;
+    padding-top: 29px;
+    // padding-bottom: 40px;
   }
   @include desktop {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 45px;
+    // padding-bottom: 55px;
   }
 }
 
@@ -33,6 +33,7 @@
 }
 
 .section-main {
+  // padding-top: 80px;
   padding-bottom: 50px;
 
   @include tablet {

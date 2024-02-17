@@ -77,6 +77,20 @@ a {
   cursor: pointer;
 }
 
+html {
+  scroll-padding-top: 37px;
+}
+@media screen and (min-width: 768px) {
+  html {
+    scroll-padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    scroll-padding-top: 75px;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -98,7 +112,28 @@ a {
   pointer-events: none;
 }
 
+.header {
+  width: 100vw;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  padding-top: 12px;
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .header {
+    padding-top: 12px;
+  }
+}
+
 .header-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,6 +210,20 @@ a {
 .page-link:hover {
   color: #21333c;
   font-size: 24px;
+}
+
+.hero {
+  padding-top: 70px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .hero {
+    padding-top: 160px;
+  }
 }
 
 .hero-title {
@@ -352,19 +401,16 @@ a {
 }
 
 .section-header {
-  padding-top: 36px;
-  padding-bottom: 29px;
+  padding-top: 26px;
 }
 @media screen and (min-width: 768px) {
   .section-header {
-    padding-top: 39px;
-    padding-bottom: 40px;
+    padding-top: 29px;
   }
 }
 @media screen and (min-width: 1600px) {
   .section-header {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 45px;
   }
 }
 
