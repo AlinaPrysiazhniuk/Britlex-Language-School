@@ -6,10 +6,6 @@
   const letsTalkBtn = document.querySelector('.mobile-menu-button');
   const openBackdrop = document.querySelector('.backdrop');
 
-  // function toggleModal() {
-  //   openBackdrop.classList.toggle('is-hidden');
-  // }
-
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -22,6 +18,7 @@
       : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
   };
+
   closeMenuLink.forEach(item => item.addEventListener('click', toggleMenu));
   letsTalkBtn.addEventListener('click', toggleMenu);
   openMenuBtn.addEventListener('click', toggleMenu);
