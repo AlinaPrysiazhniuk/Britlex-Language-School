@@ -4,16 +4,16 @@
 }
 
 .section-header {
-  padding-top: 26px;
-  // padding-bottom: 29px;
+  padding-top: 20px;
+  padding-bottom: 16px;
 
-  @include tablet {
-    padding-top: 29px;
-    // padding-bottom: 40px;
-  }
+  // @include tablet {
+  //   padding-top: 16px;
+  //   padding-bottom: 40px;
+  // }
   @include desktop {
-    padding-top: 45px;
-    // padding-bottom: 55px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 }
 
@@ -33,20 +33,27 @@
 }
 
 .section-main {
-  // padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 50px;
 
   @include tablet {
     padding-bottom: 52px;
+    padding-top: 60px;
   }
   @include desktop {
-    padding-bottom: 170px;
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
 }
 
 .section-contacts {
+  padding-top: 80px;
   @include tablet {
-    padding-bottom: 52px;
+    padding-bottom: 60px;
+    padding-top: 0;
+  }
+  @include desktop {
+    padding-top: 50px;
   }
 }
 

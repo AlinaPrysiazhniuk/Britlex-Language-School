@@ -214,15 +214,18 @@ html {
 
 .hero {
   padding-top: 70px;
+  padding-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 52px;
   }
 }
 @media screen and (min-width: 1600px) {
   .hero {
-    padding-top: 160px;
+    padding-top: 180px;
+    padding-bottom: 50px;
   }
 }
 
@@ -259,6 +262,7 @@ html {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    gap: 8px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -401,16 +405,13 @@ html {
 }
 
 .section-header {
-  padding-top: 26px;
-}
-@media screen and (min-width: 768px) {
-  .section-header {
-    padding-top: 29px;
-  }
+  padding-top: 20px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 1600px) {
   .section-header {
-    padding-top: 45px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 }
 
@@ -432,22 +433,34 @@ html {
 }
 
 .section-main {
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
   .section-main {
     padding-bottom: 52px;
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 1600px) {
   .section-main {
-    padding-bottom: 170px;
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
 }
 
+.section-contacts {
+  padding-top: 80px;
+}
 @media screen and (min-width: 768px) {
   .section-contacts {
-    padding-bottom: 52px;
+    padding-bottom: 60px;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section-contacts {
+    padding-top: 50px;
   }
 }
 

@@ -1,11 +1,15 @@
 .hero {
   padding-top: 70px;
+  padding-bottom: 50px;
+
   @include tablet {
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 52px;
   }
 
   @include desktop {
-    padding-top: 160px;
+    padding-top: 180px;
+    padding-bottom: 50px;
   }
 }
 
@@ -34,6 +38,7 @@
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
+    gap: 8px;
   }
   @include desktop {
     flex-direction: row-reverse;
