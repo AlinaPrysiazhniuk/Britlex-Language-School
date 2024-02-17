@@ -1260,10 +1260,14 @@ a {
   }
 }
 
+.contact-img {
+  width: 253px;
+  height: 228px;
+}
 @media screen and (min-width: 768px) {
   .contact-img {
-    width: 253px;
-    height: 228px;
+    width: 233px;
+    height: 210px;
   }
 }
 @media screen and (min-width: 1600px) {

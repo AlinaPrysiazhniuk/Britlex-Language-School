@@ -49,9 +49,12 @@
 }
 
 .contact-img {
+  width: 253px;
+  height: 228px;
+
   @include tablet {
-    width: 253px;
-    height: 228px;
+    width: 233px;
+    height: 210px;
   }
   @include desktop {
     width: 425px;
