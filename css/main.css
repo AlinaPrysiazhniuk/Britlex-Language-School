@@ -379,7 +379,7 @@ a {
 }
 @media screen and (min-width: 1600px) {
   .section-main {
-    padding-bottom: 180px;
+    padding-bottom: 170px;
   }
 }
 
@@ -457,9 +457,6 @@ a {
   }
 }
 
-.skills-text {
-  margin-bottom: 20px;
-}
 @media screen and (min-width: 768px) {
   .skills-text {
     margin-bottom: 30px;
@@ -477,6 +474,12 @@ a {
   text-align: left;
   font-size: 13px;
   line-height: 1.5;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .skills-text-block {
+    margin-bottom: 42px;
+  }
 }
 @media screen and (min-width: 1600px) {
   .skills-text-block {
@@ -562,7 +565,7 @@ a {
 @media screen and (min-width: 1600px) {
   .block-writing {
     padding-right: 50px;
-    margin-bottom: 33px;
+    margin-bottom: 14px;
   }
 }
 
@@ -574,6 +577,17 @@ a {
   padding-top: 10px;
   padding-bottom: 45px;
   margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .skills-block-speaking {
@@ -603,6 +617,17 @@ a {
   padding-top: 10px;
   padding-bottom: 45px;
   margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .skills-block-writing {
@@ -630,12 +655,23 @@ a {
   padding-top: 10px;
   padding-bottom: 45px;
   margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .skills-block-reading {
     width: 228px;
     height: 441px;
     margin-bottom: 0;
+    padding-top: 53px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -647,14 +683,9 @@ a {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .skills-title-reading {
-    margin-top: 60px;
-  }
-}
 @media screen and (min-width: 1600px) {
   .skills-title-reading {
-    margin-top: 23px;
+    margin-top: -23px;
   }
 }
 
@@ -663,13 +694,13 @@ a {
 }
 @media screen and (min-width: 768px) {
   .block-reading {
-    margin-bottom: 23px;
+    margin-bottom: 18px;
   }
 }
 @media screen and (min-width: 1600px) {
   .block-reading {
     padding-right: 31px;
-    margin-bottom: 32px;
+    margin-bottom: 14px;
   }
 }
 
@@ -702,6 +733,16 @@ a {
   padding-top: 10px;
   padding-bottom: 45px;
   margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 768px) {
   .skills-block-listening {
@@ -734,7 +775,7 @@ a {
 
 @media screen and (min-width: 1600px) {
   .listening-text {
-    padding-right: 141px;
+    padding-right: 114px;
   }
 }
 
@@ -768,11 +809,20 @@ a {
   }
 }
 
+.img-writing {
+  width: 204px;
+  height: 204px;
+}
 @media screen and (min-width: 768px) {
-  .img-reading {
-    margin-bottom: 20px;
-    width: 216px;
-    height: 144px;
+  .img-writing {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .img-writing {
+    width: 390px;
+    height: 264px;
   }
 }
 
@@ -1385,6 +1435,11 @@ a {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .list-agreements {
     gap: 80px;
   }
 }
@@ -1438,6 +1493,12 @@ a {
   left: -5px;
 }
 @media screen and (min-width: 768px) {
+  .item-agreement:not(:first-child)::before {
+    left: -9px;
+    top: 9px;
+  }
+}
+@media screen and (min-width: 1600px) {
   .item-agreement:not(:first-child)::before {
     display: none;
   }

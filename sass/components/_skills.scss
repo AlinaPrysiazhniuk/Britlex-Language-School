@@ -21,6 +21,7 @@
   font-weight: 600;
   line-height: 1.5;
   color: var(--text-accent-color);
+
   @include tablet {
     font-size: 20px;
     line-height: 1.5;
@@ -35,12 +36,13 @@
 }
 
 .skills-text {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   @include tablet {
     margin-bottom: 30px;
   }
   @include desktop {
     padding-right: 43px;
+    // margin-bottom: 0;
   }
 }
 
@@ -50,9 +52,14 @@
   text-align: left;
   font-size: 13px;
   line-height: 1.5;
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 42px;
+  }
 
   @include desktop {
     font-size: 16px;
+    // margin-bottom: 0;
   }
 }
 
@@ -102,9 +109,13 @@
 
 .load-more-speaking {
   padding: 14px 43px;
+  // position: absolute;
+  // bottom: 10px;
+  // left: 17px;
 
   @include desktop {
     padding: 17px 64px;
+    // bottom: 145px;
   }
 }
 
@@ -124,7 +135,7 @@
   }
   @include desktop {
     padding-right: 50px;
-    margin-bottom: 33px;
+    margin-bottom: 14px;
   }
 }
 
@@ -137,6 +148,11 @@
   padding-top: 10px;
   padding-bottom: 45px;
   margin-bottom: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
 
   @include tablet {
     width: 224px;
@@ -165,6 +181,11 @@
   padding-bottom: 45px;
   margin-bottom: 21px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
   @include tablet {
     width: 227px;
     height: 441px;
@@ -190,10 +211,15 @@
   padding-bottom: 45px;
   margin-bottom: 21px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @include tablet {
     width: 228px;
     height: 441px;
     margin-bottom: 0;
+    padding-top: 53px;
   }
 
   @include desktop {
@@ -205,23 +231,19 @@
 }
 
 .skills-title-reading {
-  @include tablet {
-    margin-top: 60px;
-  }
-
   @include desktop {
-    margin-top: 23px;
+    margin-top: -23px;
   }
 }
 
 .block-reading {
   margin-bottom: 30px;
   @include tablet {
-    margin-bottom: 23px;
+    margin-bottom: 18px;
   }
   @include desktop {
     padding-right: 31px;
-    margin-bottom: 32px;
+    margin-bottom: 14px;
   }
 }
 
@@ -251,6 +273,10 @@
   padding-bottom: 45px;
   margin-bottom: 21px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @include tablet {
     display: flex;
     flex-direction: row-reverse;
@@ -275,7 +301,7 @@
 
 .listening-text {
   @include desktop {
-    padding-right: 141px;
+    padding-right: 114px;
   }
 }
 
@@ -304,33 +330,15 @@
   }
 }
 
-// .img-writing {
-//   @include tablet {
-//     width: 200px;
-//     height: 200px;
-//   }
-//   @include desktop {
-//     width: 390px;
-//     height: 264px;
-//   }
-// }
-
-// .img-speaking {
-//   @include tablet {
-//     margin-bottom: 25px;
-//     width: 214px;
-//     height: 214px;
-//   }
-//   @include desktop {
-//     width: 390px;
-//     height: 390px;
-//   }
-// }
-
-.img-reading {
+.img-writing {
+  width: 204px;
+  height: 204px;
   @include tablet {
-    margin-bottom: 20px;
-    width: 216px;
-    height: 144px;
+    width: 200px;
+    height: 200px;
+  }
+  @include desktop {
+    width: 390px;
+    height: 264px;
   }
 }
