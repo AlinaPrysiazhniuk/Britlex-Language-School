@@ -1,673 +1,665 @@
 <!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Best way learn English" />
+  <html lang="uk">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Best way learn English" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <link rel="preload" href="./css/main.css" as="style" /> -->
-    <!-- <link rel="preload" href="main.js" as="script" /> -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="./css/main.min.css" />
+      <!-- <link rel="preload" href="./css/main.css" as="style" /> -->
+      <!-- <link rel="preload" href="main.js" as="script" /> -->
 
-    <title>Britlex Language School</title>
-  </head>
+      <title>Britlex Language School</title>
+    </head>
 
-  <body>
-    <header class="header section section-header">
-      <div class="container header-container">
-        <a href="/" lang="en" class="logo logo-begin"
-          >Brit<span class="logo-end">lex</span>
-        </a>
-        <nav class="navigation">
-          <ul class="page-list">
-            <li class="page-item">
-              <a href="/index.html" class="page-link">Home</a>
-            </li>
-            <li class="page-item">
-              <a href="#skills" class="page-link">Skills</a>
-            </li>
-            <li class="page-item">
-              <a href="#about" class="page-link">About Us</a>
-            </li>
-            <li class="page-item">
-              <a href="#pricing" class="page-link">Pricing</a>
-            </li>
-            <li class="page-item">
-              <a href="#contacts" class="page-link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+    <body>
+      <header class="header section section-header">
+        <div class="container header-container">
+          <a href="/" lang="en" class="logo logo-begin"
+            >Brit<span class="logo-end">lex</span>
+          </a>
+          <nav class="navigation">
+            <ul class="page-list">
+              <li class="page-item">
+                <a href="/index.html" class="page-link">Home</a>
+              </li>
+              <li class="page-item">
+                <a href="#skills" class="page-link">Skills</a>
+              </li>
+              <li class="page-item">
+                <a href="#about" class="page-link">About Us</a>
+              </li>
+              <li class="page-item">
+                <a href="#pricing" class="page-link">Pricing</a>
+              </li>
+              <li class="page-item">
+                <a href="#contacts" class="page-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
 
-        <!-- mob-menu -->
-        <button
-          type="button"
-          class="mob mob-open js-open-menu mobile-menu-button"
-          aria-expanded="false"
-          aria-controls="container-mob"
-          aria-label="Open"
-        >
-          <!-- Open -->
-          <svg class="mob-icon-open" width="32" height="32">
-            <use href="./images/symbol-defs.svg#icon-open"></use>
-          </svg>
-        </button>
+          <!-- mob-menu -->
+          <button
+            type="button"
+            class="mob mob-open js-open-menu mobile-menu-button"
+            aria-expanded="false"
+            aria-controls="container-mob"
+            aria-label="Open"
+          >
+            <!-- Open -->
+            <svg class="mob-icon-open" width="32" height="32">
+              <use href="./images/symbol-defs.svg#icon-open"></use>
+            </svg>
+          </button>
 
-        <button type="button" class="header-button" aria-label="Lets talk">
-          Let's Talk
-        </button>
+          <button type="button" class="header-button" aria-label="Lets talk">
+            Let's Talk
+          </button>
 
-        <div class="backdrop is-hidden">
-          <div class="mob-menu js-menu-container" id="container-mob">
-            <div class="container-mob">
-              <a
-                lang="en"
-                href="./index.html"
-                class="logo-mob-menu logo-mob-begin"
-              >
-                Brit<span class="logo-mob-end">lex</span>
-              </a>
-              <a
-                lang="en"
-                href="./index.html"
-                class="logo-tablet-menu logo-tablet-begin"
-              >
-                Brit<span class="logo-tablet-end">lex</span>
-              </a>
-              <button
-                type="button"
-                class="mob mob-close menu-toggle js-close-menu"
-                aria-label="Close"
-              >
-                <svg class="mob-icon-close" width="19" height="19">
-                  <use href="./images/symbol-defs.svg#icon-close"></use>
-                </svg>
-              </button>
+          <div class="backdrop is-hidden">
+            <div class="mob-menu js-menu-container" id="container-mob">
+              <div class="container-mob">
+                <a
+                  lang="en"
+                  href="./index.html"
+                  class="logo-mob-menu logo-mob-begin"
+                >
+                  Brit<span class="logo-mob-end">lex</span>
+                </a>
+                <a
+                  lang="en"
+                  href="./index.html"
+                  class="logo-tablet-menu logo-tablet-begin"
+                >
+                  Brit<span class="logo-tablet-end">lex</span>
+                </a>
+                <button
+                  type="button"
+                  class="mob mob-close menu-toggle js-close-menu"
+                  aria-label="Close"
+                >
+                  <svg class="mob-icon-close" width="19" height="19">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                  </svg>
+                </button>
 
-              <div class="menu-top">
-                <ul class="mob-list menu-list">
-                  <li class="mob-item">
-                    <a href="./index.html" class="mob-link mob-link-current"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="mob-item">
-                    <a href="#skills" class="mob-link mobile-nav-link"
-                      >Skills</a
-                    >
-                  </li>
-                  <li class="mob-item">
-                    <a href="#about" class="mob-link mobile-nav-link"
-                      >About Us</a
-                    >
-                  </li>
-                  <li class="mob-item">
-                    <a href="#pricing" class="mob-link mobile-nav-link"
-                      >Pricing</a
-                    >
-                  </li>
-                  <li class="mob-item">
-                    <a href="#contacts" class="mob-link mobile-nav-link"
-                      >Contacts</a
-                    >
-                  </li>
-                </ul>
-              </div>
+                <div class="menu-top">
+                  <ul class="mob-list menu-list">
+                    <li class="mob-item">
+                      <a href="./index.html" class="mob-link mob-link-current"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="mob-item">
+                      <a href="#skills" class="mob-link mobile-nav-link"
+                        >Skills</a
+                      >
+                    </li>
+                    <li class="mob-item">
+                      <a href="#about" class="mob-link mobile-nav-link"
+                        >About Us</a
+                      >
+                    </li>
+                    <li class="mob-item">
+                      <a href="#pricing" class="mob-link mobile-nav-link"
+                        >Pricing</a
+                      >
+                    </li>
+                    <li class="mob-item">
+                      <a href="#contacts" class="mob-link mobile-nav-link"
+                        >Contacts</a
+                      >
+                    </li>
+                  </ul>
+                </div>
 
-              <button
-                type="button"
-                class="btn-talk mobile-menu-btn"
-                aria-label="Lets talk"
-              >
-                Let's talk
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- menu mob -->
-      </div>
-    </header>
-
-    <main>
-      <section class="hero section section-main">
-        <div class="container hero-container">
-          <!-- <img
-            srcset="
-              ./images/hero/hero-desktop-1x.jpg 1x,
-              ./images/hero/hero-desktop-2x.jpg 2x
-            "
-            sizes="(max-width: 500px) 1600px"
-            alt="hero"
-            width="299"
-            height="299"
-            class="hero-img"
-          /> -->
-
-          <picture class="hero-img">
-            <source
-              srcset="
-                ./images/hero/hero-desktop-1x.jpg 1x,
-                ./images/hero/hero-desktop-2x.jpg 2x
-              "
-              media="(min-width: 1600px)"
-            />
-            <source
-              srcset="
-                ./images/hero/hero-tablet-1x.jpg 1x,
-                ./images/hero/hero-tablet-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/hero/hero-mobile-1x.jpg 1x,
-                ./images/hero/hero-mobile-2x.jpg 2x
-              "
-              media="(max-width: 768px)"
-            />
-            <img
-              src="./images/hero/hero-mobile-1x.jpg"
-              alt="hero"
-              class="hero-img"
-            />
-          </picture>
-
-          <div class="hero-info">
-            <div class="title-svg">
-              <h1 class="hero-title">
-                Learn <br />Any Foreign<br />
-                Language
-              </h1>
-              <svg class="icon-light-bulb" width="51" height="51">
-                <use href="./images/symbol-defs.svg#icon-light-bulb"></use>
-              </svg>
-            </div>
-            <p class="hero-text">
-              With our teachers who write a program for each student, you will
-              be able to make your first sketch after the first lesson.
-            </p>
-            <button type="button" class="hero-button" aria-label="Start">
-              Get started
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="skills section section-main">
-        <div class="container">
-          <h2 class="skills-title">Skills</h2>
-          <div class="skills-blocks">
-            <div class="skills-block-speaking">
-              <picture class="skills-img img-speaking">
-                <source
-                  srcset="
-                    ./images/skills/speaking-desktop-1x.png 1x,
-                    ./images/skills/speaking-desktop-2x.png 2x
-                  "
-                  media="(min-width: 1600px)"
-                />
-                <source
-                  srcset="
-                    ./images/skills/speaking-tablet-1x.png 1x,
-                    ./images/skills/speaking-tablet-2x.png 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/skills/speaking-mobile-1x.png 1x,
-                    ./images/skills/speaking-mobile-2x.png 2x
-                  "
-                  media="(max-width: 768px)"
-                />
-                <img
-                  src="./images/skills/speaking-mobile-1x.png"
-                  alt="speaking"
-                  class="skills-img img-speaking"
-                />
-              </picture>
-
-              <h3 class="skills-title-block">Speaking</h3>
-              <div class="skills-text">
-                <p class="skills-text-block block-2">
-                  Improve your English skills and confidence. Live classes and
-                  interactive lessons online. 20% extra free for a limited time
-                  only
-                </p>
-                <p class="skills-text-block block-2"></p>
-                <p class="skills-text-block">
-                  Learn English online and improve your skills through our
-                  high-quality courses and resources – all designed for adult
-                  language learners.
-                </p>
-              </div>
-
-              <a href="" class="skills-link load-more-speaking">Learn more</a>
-            </div>
-            <div class="skills-block-writing">
-              <picture class="skills-img img-writing">
-                <source
-                  srcset="
-                    ./images/skills/writing-desktop-1x.png 1x,
-                    ./images/skills/writing-desktop-2x.png 2x
-                  "
-                  media="(min-width: 1600px)"
-                />
-                <source
-                  srcset="
-                    ./images/skills/writing-tablet-1x.png 1x,
-                    ./images/skills/writing-tablet-2x.png 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/skills/writing-mobile-1x.png 1x,
-                    ./images/skills/writing-mobile-2x.png 2x
-                  "
-                  media="(max-width: 768px)"
-                />
-                <img
-                  src="./images/skills/wrining-mobile-1x.png"
-                  alt="writing"
-                  class="skills-img img-writing"
-                />
-              </picture>
-
-              <h3 class="skills-title-block">Writing</h3>
-              <p class="skills-text-block block-writing">
-                One of the most important and extensive areas of natural
-                science, the science that studies substances, also their
-                composition
-              </p>
-              <a href="" class="skills-link load-more">Learn more</a>
-            </div>
-            <div class="skills-block-reading">
-              <picture class="skills-img img-reading">
-                <source
-                  srcset="
-                    ./images/skills/reading-desktop-1x.png 1x,
-                    ./images/skills/reading-desktop-2x.png 2x
-                  "
-                  media="(min-width: 1600px)"
-                />
-                <source
-                  srcset="
-                    ./images/skills/reading-tablet-1x.png 1x,
-                    ./images/skills/reading-tablet-2x.png 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/skills/reading-mobile-1x.png 1x,
-                    ./images/skills/reading-mobile-2x.png 2x
-                  "
-                  media="(max-width: 768px)"
-                />
-                <img
-                  src="./images/skills/reading-mobile-1x.png"
-                  alt="reading"
-                  class="skills-img"
-                />
-              </picture>
-
-              <h3 class="skills-title-block skills-title-reading">Reading</h3>
-              <p class="skills-text-block block-reading">
-                Perception and response actions of the user resulting from the
-                use and/or upcoming use of the product, system or service
-              </p>
-              <a href="" class="skills-link load-more">Learn more</a>
-            </div>
-            <div class="skills-block-listening">
-              <picture class="skills-img">
-                <source
-                  srcset="
-                    ./images/skills/listening-desktop-1x.png 1x,
-                    ./images/skills/listening-desktop-2x.png 2x
-                  "
-                  media="(min-width: 1600px)"
-                />
-                <source
-                  srcset="
-                    ./images/skills/listening-tablet-1x.png 1x,
-                    ./images/skills/listening-tablet-2x.png 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/skills/listening-mobile-1x.png 1x,
-                    ./images/skills/listening-mobile-2x.png 2x
-                  "
-                  media="(max-width: 768px)"
-                />
-                <img
-                  src="./images/skills/listening-mobile-1x.png"
-                  alt="listening"
-                  class="skills-img"
-                />
-              </picture>
-
-              <div class="listening-text">
-                <h3 class="skills-title-block">Listening</h3>
-                <p class="skills-text-block block-listening">
-                  Here you can find activities to practise your listening
-                  skills. Listening will help you to improve your understanding
-                </p>
-                <a href="" class="skills-link load-more">Learn more</a>
+                <button
+                  type="button"
+                  class="btn-talk mobile-menu-btn"
+                  aria-label="Lets talk"
+                >
+                  Let's talk
+                </button>
               </div>
             </div>
           </div>
+          <!-- menu mob -->
         </div>
-      </section>
+      </header>
 
-      <section id="about" class="about section section-main">
-        <div class="container about-container">
-          <div class="about-block">
-            <h2 class="about-title">About Us</h2>
+      <main>
+        <section class="hero section section-main">
+          <div class="container hero-container">
 
-            <picture class="about-img">
+
+            <picture class="hero-img">
               <source
                 srcset="
-                  ./images/about/about-us-desktop-1x.png 1x,
-                  ./images/about/about-us-desktop-2x.png 2x
+                  ./images/hero/hero-desktop-1x.jpg 1x,
+                  ./images/hero/hero-desktop-2x.jpg 2x
                 "
                 media="(min-width: 1600px)"
               />
               <source
                 srcset="
-                  ./images/about/about-us-tablet-1x.png 1x,
-                  ./images/about/about-us-tablet-2x.png 2x
+                  ./images/hero/hero-tablet-1x.jpg 1x,
+                  ./images/hero/hero-tablet-2x.jpg 2x
                 "
                 media="(min-width: 768px)"
               />
               <source
                 srcset="
-                  ./images/about/about-us-mobile-1x.png 1x,
-                  ./images/about/about-us-mobile-2x.png 2x
+                  ./images/hero/hero-mobile-1x.jpg 1x,
+                  ./images/hero/hero-mobile-2x.jpg 2x
                 "
                 media="(max-width: 768px)"
               />
               <img
-                src="./images/about/about-us-mobile-1x.png"
-                alt="about us"
-                class="skills-img img-writing"
+                src="./images/hero/hero-mobile-1x.jpg"
+                alt="hero"
+                class="hero-img"
               />
             </picture>
 
-            <div class="about-info">
-              <p class="about-text">
-                The model offers a framework for discussing problems related to
-                the user's experience, as well as possible ways and means of
-                solving them. Application development begins at the top level
-                (strategy), where the future software product is described quite
-                abstractly from the point of view of the expectations of both
-                users and the customer.
+            <div class="hero-info">
+              <div class="title-svg">
+                <h1 class="hero-title">
+                  Learn <br />Any Foreign<br />
+                  Language
+                </h1>
+                <svg class="icon-light-bulb" width="51" height="51">
+                  <use href="./images/symbol-defs.svg#icon-light-bulb"></use>
+                </svg>
+              </div>
+              <p class="hero-text">
+                With our teachers who write a program for each student, you will
+                be able to make your first sketch after the first lesson.
               </p>
-              <ul class="about-list">
-                <li class="about-item">
-                  <div class="about-statistics">
-                    <span class="statistics-number">800</span>
-                    <p class="statistics-text">Pupils</p>
-                  </div>
-                </li>
-                <li class="about-item">
-                  <div class="about-statistics">
-                    <span class="statistics-number">18</span>
-                    <p class="statistics-text">Teachers</p>
-                  </div>
-                </li>
-                <li class="about-item">
-                  <div class="about-statistics">
-                    <span class="statistics-number">6</span>
-                    <p class="statistics-text">Foreign languages</p>
-                  </div>
-                </li>
-              </ul>
+              <button type="button" class="hero-button" aria-label="Start">
+                Get started
+              </button>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="pricing" class="pricing section section-main">
-        <div class="container">
-          <h2 class="pricing-title">Pricing</h2>
-          <div class="pricing-list">
-            <div class="pricing-item">
-              <picture class="pricing-img">
+        <section id="skills" class="skills section section-main">
+          <div class="container">
+            <h2 class="skills-title">Skills</h2>
+            <div class="skills-blocks">
+              <div class="skills-block-speaking">
+                <picture class="skills-img img-speaking">
+                  <source
+                    srcset="
+                      ./images/skills/speaking-desktop-1x.png 1x,
+                      ./images/skills/speaking-desktop-2x.png 2x
+                    "
+                    media="(min-width: 1600px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/skills/speaking-tablet-1x.png 1x,
+                      ./images/skills/speaking-tablet-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/skills/speaking-mobile-1x.png 1x,
+                      ./images/skills/speaking-mobile-2x.png 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/skills/speaking-mobile-1x.png"
+                    alt="speaking"
+                    class="skills-img img-speaking"
+                  />
+                </picture>
+
+                <h3 class="skills-title-block">Speaking</h3>
+                <div class="skills-text">
+                  <p class="skills-text-block block-2">
+                    Improve your English skills and confidence. Live classes and
+                    interactive lessons online. 20% extra free for a limited
+                    time only
+                  </p>
+                  <p class="skills-text-block block-2"></p>
+                  <p class="skills-text-block">
+                    Learn English online and improve your skills through our
+                    high-quality courses and resources – all designed for adult
+                    language learners.
+                  </p>
+                </div>
+
+                <a href="" class="skills-link load-more-speaking">Learn more</a>
+              </div>
+              <div class="skills-block-writing">
+                <picture class="skills-img img-writing">
+                  <source
+                    srcset="
+                      ./images/skills/writing-desktop-1x.png 1x,
+                      ./images/skills/writing-desktop-2x.png 2x
+                    "
+                    media="(min-width: 1600px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/skills/writing-tablet-1x.png 1x,
+                      ./images/skills/writing-tablet-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/skills/writing-mobile-1x.png 1x,
+                      ./images/skills/writing-mobile-2x.png 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/skills/wrining-mobile-1x.png"
+                    alt="writing"
+                    class="skills-img img-writing"
+                  />
+                </picture>
+
+                <h3 class="skills-title-block">Writing</h3>
+                <p class="skills-text-block block-writing">
+                  One of the most important and extensive areas of natural
+                  science, the science that studies substances, also their
+                  composition
+                </p>
+                <a href="" class="skills-link load-more">Learn more</a>
+              </div>
+              <div class="skills-block-reading">
+                <picture class="skills-img img-reading">
+                  <source
+                    srcset="
+                      ./images/skills/reading-desktop-1x.png 1x,
+                      ./images/skills/reading-desktop-2x.png 2x
+                    "
+                    media="(min-width: 1600px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/skills/reading-tablet-1x.png 1x,
+                      ./images/skills/reading-tablet-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/skills/reading-mobile-1x.png 1x,
+                      ./images/skills/reading-mobile-2x.png 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/skills/reading-mobile-1x.png"
+                    alt="reading"
+                    class="skills-img"
+                  />
+                </picture>
+
+                <h3 class="skills-title-block skills-title-reading">Reading</h3>
+                <p class="skills-text-block block-reading">
+                  Perception and response actions of the user resulting from the
+                  use and/or upcoming use of the product, system or service
+                </p>
+                <a href="" class="skills-link load-more">Learn more</a>
+              </div>
+              <div class="skills-block-listening">
+                <picture class="skills-img">
+                  <source
+                    srcset="
+                      ./images/skills/listening-desktop-1x.png 1x,
+                      ./images/skills/listening-desktop-2x.png 2x
+                    "
+                    media="(min-width: 1600px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/skills/listening-tablet-1x.png 1x,
+                      ./images/skills/listening-tablet-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/skills/listening-mobile-1x.png 1x,
+                      ./images/skills/listening-mobile-2x.png 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/skills/listening-mobile-1x.png"
+                    alt="listening"
+                    class="skills-img"
+                  />
+                </picture>
+
+                <div class="listening-text">
+                  <h3 class="skills-title-block">Listening</h3>
+                  <p class="skills-text-block block-listening">
+                    Here you can find activities to practise your listening
+                    skills. Listening will help you to improve your
+                    understanding
+                  </p>
+                  <a href="" class="skills-link load-more">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="about section section-main">
+          <div class="container about-container">
+            <div class="about-block">
+              <h2 class="about-title">About Us</h2>
+
+              <picture class="about-img">
                 <source
                   srcset="
-                    ./images/pricing/pricing1-desktop-1x.png 1x,
-                    ./images/pricing/pricing1-desktop-2x.png 2x
+                    ./images/about/about-us-desktop-1x.png 1x,
+                    ./images/about/about-us-desktop-2x.png 2x
                   "
                   media="(min-width: 1600px)"
                 />
                 <source
                   srcset="
-                    ./images/pricing/pricing1-tablet-1x.png 1x,
-                    ./images/pricing/pricing1-tablet-2x.png 2x
+                    ./images/about/about-us-tablet-1x.png 1x,
+                    ./images/about/about-us-tablet-2x.png 2x
                   "
                   media="(min-width: 768px)"
                 />
                 <source
                   srcset="
-                    ./images/pricing/pricing1-mobile-1x.png 1x,
-                    ./images/pricing/pricing1-mobile-2x.png 2x
+                    ./images/about/about-us-mobile-1x.png 1x,
+                    ./images/about/about-us-mobile-2x.png 2x
                   "
                   media="(max-width: 768px)"
                 />
                 <img
-                  src="./images/pricing/pricing1-mobile-1x.png"
-                  alt="pricing-1"
-                  class="pricing-img"
+                  src="./images/about/about-us-mobile-1x.png"
+                  alt="about us"
+                  class="skills-img img-writing"
                 />
               </picture>
 
-              <div class="pricing-info">
-                <h3 class="pricing-title-block">Self-study online course</h3>
-                <p class="pricing-text">
-                  Start learning English online in live classes with qualified
-                  EC teachers and students from all over the world.
+              <div class="about-info">
+                <p class="about-text">
+                  The model offers a framework for discussing problems related
+                  to the user's experience, as well as possible ways and means
+                  of solving them. Application development begins at the top
+                  level (strategy), where the future software product is
+                  described quite abstractly from the point of view of the
+                  expectations of both users and the customer.
                 </p>
-              </div>
-              <div class="pricing-price">
-                <p class="pricing-sum">£5.99</p>
-                <p class="pricing-period">per month</p>
-              </div>
-            </div>
-            <div class="pricing-item">
-              <picture class="pricing-img">
-                <source
-                  srcset="
-                    ./images/pricing/pricing2-desktop-1x.png 1x,
-                    ./images/pricing/pricing2-desktop-2x.png 2x
-                  "
-                  media="(min-width: 1600px)"
-                />
-                <source
-                  srcset="
-                    ./images/pricing/pricing2-tablet-1x.png 1x,
-                    ./images/pricing/pricing2-tablet-2x.png 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/pricing/pricing2-mobile-1x.png 1x,
-                    ./images/pricing/pricing2-mobile-2x.png 2x
-                  "
-                  media="(max-width: 768px)"
-                />
-                <img
-                  src="./images/pricing/pricing2-mobile-1x.png"
-                  alt="pricing-2"
-                  class="pricing-img"
-                />
-              </picture>
-              <div class="pricing-info">
-                <h3 class="pricing-title-block subtitle">
-                  Live online classes
-                </h3>
-                <p class="pricing-text">
-                  Interactive group classes with expert teachers. Free 7-day
-                  trial
-                </p>
-              </div>
-              <div class="pricing-price">
-                <p class="pricing-sum">£12.99</p>
-                <p class="pricing-period">per month</p>
-              </div>
-            </div>
-            <div class="pricing-item">
-              <picture class="pricing-img">
-                <source
-                  srcset="
-                    ./images/pricing/pricing3-desktop-1x.png 1x,
-                    ./images/pricing/pricing3-desktop-2x.png 2x
-                  "
-                  media="(min-width: 1600px)"
-                />
-                <source
-                  srcset="
-                    ./images/pricing/pricing3-tablet-1x.png 1x,
-                    ./images/pricing/pricing3-tablet-2x.png 2x
-                  "
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./images/pricing/pricing3-mobile-1x.png 1x,
-                    ./images/pricing/pricing3-mobile-2x.png 2x
-                  "
-                  media="(max-width: 768px)"
-                />
-                <img
-                  src="./images/pricing/pricing3-mobile-1x.png"
-                  alt="pricing-3"
-                  class="pricing-img"
-                />
-              </picture>
-
-              <div class="pricing-info">
-                <h3 class="pricing-title-block subtitle-pricing3">
-                  Personal Tuition
-                </h3>
-                <p class="pricing-text">
-                  Online one-to-one English tutoring – enjoy our first session
-                  for only $1
-                </p>
-              </div>
-              <div class="pricing-price">
-                <p class="pricing-sum">£12.99</p>
-                <p class="pricing-period">per month</p>
+                <ul class="about-list">
+                  <li class="about-item">
+                    <div class="about-statistics">
+                      <span class="statistics-number">800</span>
+                      <p class="statistics-text">Pupils</p>
+                    </div>
+                  </li>
+                  <li class="about-item">
+                    <div class="about-statistics">
+                      <span class="statistics-number">18</span>
+                      <p class="statistics-text">Teachers</p>
+                    </div>
+                  </li>
+                  <li class="about-item">
+                    <div class="about-statistics">
+                      <span class="statistics-number">6</span>
+                      <p class="statistics-text">Foreign languages</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="contacts" class="contacts section section-contacts">
-        <div class="container container-contacts">
-          <picture class="contact-img">
-            <source
-              srcset="
-                ./images/contacts/contact-desktop-1x.png 1x,
-                ./images/contacts/contact-desktop-2x.png 2x
-              "
-              media="(min-width: 1600px)"
-            />
-            <source
-              srcset="
-                ./images/contacts/contact-tablet-1x.png 1x,
-                ./images/contacts/contact-tablet-2x.png 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./images/contacts/contact-mobile-1x.png 1x,
-                ./images/contacts/contact-mobile-2x.png 2x
-              "
-              media="(max-width: 768px)"
-            />
-            <img
-              src="./images/contacts/contact-mobile-1x.png"
-              alt="contacts"
-              class="contact-img"
-            />
-          </picture>
+        <section id="pricing" class="pricing section section-main">
+          <div class="container">
+            <h2 class="pricing-title">Pricing</h2>
+            <div class="pricing-list">
+              <div class="pricing-item">
+                <picture class="pricing-img">
+                  <source
+                    srcset="
+                      ./images/pricing/pricing1-desktop-1x.png 1x,
+                      ./images/pricing/pricing1-desktop-2x.png 2x
+                    "
+                    media="(min-width: 1600px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/pricing/pricing1-tablet-1x.png 1x,
+                      ./images/pricing/pricing1-tablet-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/pricing/pricing1-mobile-1x.png 1x,
+                      ./images/pricing/pricing1-mobile-2x.png 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/pricing/pricing1-mobile-1x.png"
+                    alt="pricing-1"
+                    class="pricing-img"
+                  />
+                </picture>
 
-          <div class="contacts-info">
-            <div class="contacts-info-details">
-              <h2 class="contacts-title">Contact Us</h2>
-              <p class="contacts-text">
-                Discover your current English level by taking our free online
-                English test. Sign up to our newsletter for learning tips and
-                free resources
-              </p>
-            </div>
-            <form class="form">
-              <div class="contacts-form">
-                <input
-                  type="text"
-                  class="form-email"
-                  placeholder="Enter Your E-mail"
-                />
-                <button
-                  type="submit"
-                  class="form-button"
-                  aria-label="Subscribe"
-                >
-                  Subscribe
-                </button>
+                <div class="pricing-info">
+                  <h3 class="pricing-title-block">Self-study online course</h3>
+                  <p class="pricing-text">
+                    Start learning English online in live classes with qualified
+                    EC teachers and students from all over the world.
+                  </p>
+                </div>
+                <div class="pricing-price">
+                  <p class="pricing-sum">£5.99</p>
+                  <p class="pricing-period">per month</p>
+                </div>
               </div>
-            </form>
+              <div class="pricing-item">
+                <picture class="pricing-img">
+                  <source
+                    srcset="
+                      ./images/pricing/pricing2-desktop-1x.png 1x,
+                      ./images/pricing/pricing2-desktop-2x.png 2x
+                    "
+                    media="(min-width: 1600px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/pricing/pricing2-tablet-1x.png 1x,
+                      ./images/pricing/pricing2-tablet-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/pricing/pricing2-mobile-1x.png 1x,
+                      ./images/pricing/pricing2-mobile-2x.png 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/pricing/pricing2-mobile-1x.png"
+                    alt="pricing-2"
+                    class="pricing-img"
+                  />
+                </picture>
+                <div class="pricing-info">
+                  <h3 class="pricing-title-block subtitle">
+                    Live online classes
+                  </h3>
+                  <p class="pricing-text">
+                    Interactive group classes with expert teachers. Free 7-day
+                    trial
+                  </p>
+                </div>
+                <div class="pricing-price">
+                  <p class="pricing-sum">£12.99</p>
+                  <p class="pricing-period">per month</p>
+                </div>
+              </div>
+              <div class="pricing-item">
+                <picture class="pricing-img">
+                  <source
+                    srcset="
+                      ./images/pricing/pricing3-desktop-1x.png 1x,
+                      ./images/pricing/pricing3-desktop-2x.png 2x
+                    "
+                    media="(min-width: 1600px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/pricing/pricing3-tablet-1x.png 1x,
+                      ./images/pricing/pricing3-tablet-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/pricing/pricing3-mobile-1x.png 1x,
+                      ./images/pricing/pricing3-mobile-2x.png 2x
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="./images/pricing/pricing3-mobile-1x.png"
+                    alt="pricing-3"
+                    class="pricing-img"
+                  />
+                </picture>
+
+                <div class="pricing-info">
+                  <h3 class="pricing-title-block subtitle-pricing3">
+                    Personal Tuition
+                  </h3>
+                  <p class="pricing-text">
+                    Online one-to-one English tutoring – enjoy our first session
+                    for only $1
+                  </p>
+                </div>
+                <div class="pricing-price">
+                  <p class="pricing-sum">£12.99</p>
+                  <p class="pricing-period">per month</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <footer class="section section-footer">
-        <div class="container container-footer">
-          <a href="/" lang="en" class="logo logo-footer logo-begin"
-            >Brit<span class="logo-end">lex</span>
-          </a>
-          <ul class="list-agreements">
-            <li class="item-agreement">
-              <a href="" class="link-agreement">Terms and Conditions</a>
-            </li>
-            <li class="item-agreement">
-              <a href="" class="link-agreement">Privacy Policy</a>
-            </li>
-            <li class="item-agreement">
-              <a href="" class="link-agreement">Cookie Policy</a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </main>
+        <section id="contacts" class="contacts section section-contacts">
+          <div class="container container-contacts">
+            <picture class="contact-img">
+              <source
+                srcset="
+                  ./images/contacts/contact-desktop-1x.png 1x,
+                  ./images/contacts/contact-desktop-2x.png 2x
+                "
+                media="(min-width: 1600px)"
+              />
+              <source
+                srcset="
+                  ./images/contacts/contact-tablet-1x.png 1x,
+                  ./images/contacts/contact-tablet-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/contacts/contact-mobile-1x.png 1x,
+                  ./images/contacts/contact-mobile-2x.png 2x
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                src="./images/contacts/contact-mobile-1x.png"
+                alt="contacts"
+                class="contact-img"
+              />
+            </picture>
 
-    <script src="./js/menu.js"></script>
-    <!-- <script src="./js/backdop.js"></script> -->
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+            <div class="contacts-info">
+              <div class="contacts-info-details">
+                <h2 class="contacts-title">Contact Us</h2>
+                <p class="contacts-text">
+                  Discover your current English level by taking our free online
+                  English test. Sign up to our newsletter for learning tips and
+                  free resources
+                </p>
+              </div>
+              <form class="form">
+                <div class="contacts-form">
+                  <input
+                    type="text"
+                    class="form-email"
+                    placeholder="Enter Your E-mail"
+                  />
+                  <button
+                    type="submit"
+                    class="form-button"
+                    aria-label="Subscribe"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <footer class="section section-footer">
+          <div class="container container-footer">
+            <a href="/" lang="en" class="logo logo-footer logo-begin"
+              >Brit<span class="logo-end">lex</span>
+            </a>
+            <ul class="list-agreements">
+              <li class="item-agreement">
+                <a href="" class="link-agreement">Terms and Conditions</a>
+              </li>
+              <li class="item-agreement">
+                <a href="" class="link-agreement">Privacy Policy</a>
+              </li>
+              <li class="item-agreement">
+                <a href="" class="link-agreement">Cookie Policy</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+
+      <script src="./js/menu.js"></script>
+      <!-- <script src="./js/backdop.js"></script> -->
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
+</!DOCTYPE>
