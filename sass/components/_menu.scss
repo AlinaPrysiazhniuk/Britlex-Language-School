@@ -12,6 +12,12 @@
     width: 39px;
     height: 39px;
   }
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: #3a535f;
+    scale: 1.2;
+  }
 }
 
 .mob-list {
