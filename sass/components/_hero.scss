@@ -42,6 +42,7 @@
   }
   @include desktop {
     flex-direction: row-reverse;
+    gap: 6px;
   }
 }
 
