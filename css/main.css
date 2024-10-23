@@ -199,7 +199,6 @@ html {
   }
 }
 .header-button:hover {
-  scale: 1.05;
   background-color: #c7cfd3;
 }
 
@@ -633,6 +632,11 @@ html {
   padding: 14px 43px;
   -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .load-more-speaking {
+    left: 16px;
+  }
 }
 @media screen and (min-width: 1600px) {
   .load-more-speaking {
@@ -1961,7 +1965,7 @@ html {
   color: white;
   font-weight: 800;
   border: 1px solid grey;
-  padding: 15px;
+  padding: 15px 20px;
   border-radius: 50%;
   font-size: 30px;
   cursor: pointer;

@@ -111,6 +111,11 @@
   position: absolute;
   bottom: 10px;
   padding: 14px 43px;
+
+  @include tablet {
+    left: 16px;
+  }
+
   @include desktop {
     padding: 17px 64px;
     left: 18px;
