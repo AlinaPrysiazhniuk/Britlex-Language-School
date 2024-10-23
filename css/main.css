@@ -702,6 +702,7 @@ html {
   .skills-block-speaking {
     width: 426px;
     padding-top: 26px;
+    padding-bottom: 18px;
     padding-left: 18px;
     padding-right: 18px;
   }
@@ -861,6 +862,12 @@ html {
   .skills-block-listening {
     width: 882px;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .listening-text-button {
+    padding-top: 30px;
   }
 }
 
