@@ -544,16 +544,14 @@ html {
   }
 }
 
-.skills-text {
-  margin-bottom: 25px;
-}
 @media screen and (min-width: 768px) {
-  .skills-text {
-    margin-bottom: 30px;
+  .skills-text-listening {
+    margin-bottom: 7px;
   }
 }
 @media screen and (min-width: 1600px) {
-  .skills-text {
+  .skills-text-listening {
+    margin-bottom: 80px;
     padding-right: 43px;
   }
 }
@@ -627,22 +625,13 @@ html {
 }
 
 .load-more-speaking {
-  position: absolute;
-  bottom: 10px;
   padding: 14px 43px;
   -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
-  .load-more-speaking {
-    left: 16px;
-  }
-}
 @media screen and (min-width: 1600px) {
   .load-more-speaking {
     padding: 17px 64px;
-    left: 18px;
-    bottom: 18px;
   }
 }
 .load-more-speaking:hover {
@@ -656,21 +645,13 @@ html {
 }
 
 .load-more {
-  position: absolute;
-  bottom: 10px;
   padding: 13px 43px;
   -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) {
-  .load-more {
-    left: 18px;
-  }
-}
 @media screen and (min-width: 1600px) {
   .load-more {
     padding: 15px 52px;
-    bottom: 18px;
   }
 }
 .load-more:hover {
@@ -696,7 +677,7 @@ html {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 10px;
-  padding-bottom: 45px;
+  padding-bottom: 10px;
   margin-bottom: 21px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -713,7 +694,6 @@ html {
 @media screen and (min-width: 768px) {
   .skills-block-speaking {
     width: 224px;
-    height: 662px;
     margin-bottom: 0;
     padding-top: 30px;
   }
@@ -721,11 +701,9 @@ html {
 @media screen and (min-width: 1600px) {
   .skills-block-speaking {
     width: 426px;
-    padding-top: 32px;
-    padding-bottom: 154px;
+    padding-top: 26px;
     padding-left: 18px;
     padding-right: 18px;
-    height: 947px;
   }
 }
 
@@ -733,11 +711,11 @@ html {
   position: relative;
   background-color: var(--bg-color);
   border-radius: 10px;
-  height: auto;
+  height: 100%;
   padding-left: 16px;
   padding-right: 17px;
-  padding-top: 10px;
-  padding-bottom: 45px;
+  padding-top: 8px;
+  padding-bottom: 10px;
   margin-bottom: 21px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,17 +732,14 @@ html {
 @media screen and (min-width: 768px) {
   .skills-block-writing {
     width: 227px;
-    height: 441px;
     padding-top: 14px;
-    padding-bottom: 17px;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1600px) {
   .skills-block-writing {
     width: 426px;
-    padding: 32px 18px;
-    height: 579px;
+    padding: 18px 18px;
   }
 }
 
@@ -772,11 +747,11 @@ html {
   position: relative;
   background-color: var(--bg-color);
   border-radius: 10px;
-  height: auto;
+  height: 100%;
   padding-left: 16px;
   padding-right: 17px;
   padding-top: 10px;
-  padding-bottom: 45px;
+  padding-bottom: 10px;
   margin-bottom: 21px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -792,17 +767,15 @@ html {
 @media screen and (min-width: 768px) {
   .skills-block-reading {
     width: 228px;
-    height: 441px;
     margin-bottom: 0;
-    padding-top: 53px;
+    padding-top: 55px;
   }
 }
 @media screen and (min-width: 1600px) {
   .skills-block-reading {
     width: 426px;
-    padding: 32px 18px;
+    padding: 18px 18px;
     border-radius: 10px;
-    height: 579px;
   }
 }
 
@@ -849,10 +822,11 @@ html {
   border-radius: 10px;
   border: none;
   padding: 32px 18px;
+  height: auto;
   padding-left: 16px;
   padding-right: 17px;
   padding-top: 10px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   margin-bottom: 21px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -867,28 +841,42 @@ html {
 }
 @media screen and (min-width: 768px) {
   .skills-block-listening {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     position: absolute;
     bottom: 0;
     right: 0;
     padding-left: 22px;
     padding-right: 0;
     width: 462px;
-    height: 210px;
-    margin-bottom: 0px;
+    margin-bottom: -2px;
   }
 }
 @media screen and (min-width: 1600px) {
   .skills-block-listening {
-    padding: 32px 18px;
     width: 882px;
-    height: 338px;
+    margin-bottom: 0;
+  }
+}
+
+.skills-listenig-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .skills-listenig-btn {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
