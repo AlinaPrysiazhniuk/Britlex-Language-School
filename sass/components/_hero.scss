@@ -22,12 +22,10 @@
 
   @include tablet {
     font-size: 36px;
-    // margin-bottom: 25px;
     text-align: left;
   }
   @include desktop {
     font-size: 64px;
-    // margin-bottom: 40px;
     text-align: left;
   }
 }

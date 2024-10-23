@@ -36,7 +36,7 @@
 }
 
 .skills-text {
-  // margin-bottom: 20px;
+  margin-bottom: 25px;
   @include tablet {
     margin-bottom: 30px;
   }
@@ -108,10 +108,13 @@
 }
 
 .load-more-speaking {
+  position: absolute;
+  bottom: 10px;
   padding: 14px 43px;
-
   @include desktop {
     padding: 17px 64px;
+    left: 18px;
+    bottom: 18px;
   }
 
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -121,11 +124,25 @@
   }
 }
 
+.load-more-listening {
+  @include tablet {
+    left: 18px;
+  }
+}
+
 .load-more {
+  position: absolute;
+  bottom: 10px;
+
   padding: 13px 43px;
+
+  @include tablet {
+    left: 18px;
+  }
 
   @include desktop {
     padding: 15px 52px;
+    bottom: 18px;
   }
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -135,7 +152,7 @@
 }
 
 .block-writing {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   @include tablet {
     margin-bottom: 13px;
@@ -147,6 +164,7 @@
 }
 
 .skills-block-speaking {
+  position: relative;
   background-color: var(--bg-color);
 
   border-radius: 10px;
@@ -179,6 +197,7 @@
 }
 
 .skills-block-writing {
+  position: relative;
   background-color: var(--bg-color);
   border-radius: 10px;
   height: auto;
@@ -209,6 +228,7 @@
 }
 
 .skills-block-reading {
+  position: relative;
   background-color: var(--bg-color);
   border-radius: 10px;
   height: auto;
@@ -244,7 +264,7 @@
 }
 
 .block-reading {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   @include tablet {
     margin-bottom: 18px;
   }
@@ -269,6 +289,7 @@
 }
 
 .skills-block-listening {
+  position: relative;
   background-color: var(--bg-color);
   border-radius: 10px;
   border: none;
@@ -277,7 +298,7 @@
   padding-left: 16px;
   padding-right: 17px;
   padding-top: 10px;
-  padding-bottom: 45px;
+  padding-bottom: 60px;
   margin-bottom: 21px;
 
   display: flex;
@@ -291,8 +312,6 @@
     bottom: 0;
     right: 0;
     padding-left: 22px;
-    padding-top: 18px;
-    padding-bottom: 18px;
     padding-right: 0;
     width: 462px;
     height: 210px;
@@ -326,7 +345,7 @@
 }
 
 .block-listening {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   @include tablet {
     margin-bottom: 6px;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --link-color: #263238;
   --text-button-color: #000000;
@@ -120,6 +121,8 @@ html {
   z-index: 1;
   padding-top: 12px;
   background-color: white;
+  -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -130,6 +133,10 @@ html {
   .header {
     padding-top: 12px;
   }
+}
+
+.header.scrolled {
+  background-color: rgb(212, 212, 212); /* Колір при прокрутці */
 }
 
 .header-container {
@@ -197,6 +204,11 @@ html {
 
 .page-item {
   list-style-type: none;
+  -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.page-item:hover {
+  scale: 1.2;
 }
 
 .page-link {
@@ -209,7 +221,6 @@ html {
 }
 .page-link:hover {
   color: #21333c;
-  font-size: 24px;
 }
 
 .hero {
@@ -533,6 +544,9 @@ html {
   }
 }
 
+.skills-text {
+  margin-bottom: 25px;
+}
 @media screen and (min-width: 768px) {
   .skills-text {
     margin-bottom: 30px;
@@ -613,6 +627,8 @@ html {
 }
 
 .load-more-speaking {
+  position: absolute;
+  bottom: 10px;
   padding: 14px 43px;
   -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -620,29 +636,42 @@ html {
 @media screen and (min-width: 1600px) {
   .load-more-speaking {
     padding: 17px 64px;
+    left: 18px;
+    bottom: 18px;
   }
 }
 .load-more-speaking:hover {
   background-color: #556770;
 }
 
+@media screen and (min-width: 768px) {
+  .load-more-listening {
+    left: 18px;
+  }
+}
+
 .load-more {
+  position: absolute;
+  bottom: 10px;
   padding: 13px 43px;
   -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .load-more {
+    left: 18px;
+  }
+}
 @media screen and (min-width: 1600px) {
   .load-more {
     padding: 15px 52px;
+    bottom: 18px;
   }
 }
 .load-more:hover {
   background-color: #556770;
 }
 
-.block-writing {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .block-writing {
     margin-bottom: 13px;
@@ -656,6 +685,7 @@ html {
 }
 
 .skills-block-speaking {
+  position: relative;
   background-color: var(--bg-color);
   border-radius: 10px;
   padding-left: 16px;
@@ -695,6 +725,7 @@ html {
 }
 
 .skills-block-writing {
+  position: relative;
   background-color: var(--bg-color);
   border-radius: 10px;
   height: auto;
@@ -733,6 +764,7 @@ html {
 }
 
 .skills-block-reading {
+  position: relative;
   background-color: var(--bg-color);
   border-radius: 10px;
   height: auto;
@@ -775,9 +807,6 @@ html {
   }
 }
 
-.block-reading {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .block-reading {
     margin-bottom: 18px;
@@ -810,6 +839,7 @@ html {
 }
 
 .skills-block-listening {
+  position: relative;
   background-color: var(--bg-color);
   border-radius: 10px;
   border: none;
@@ -817,7 +847,7 @@ html {
   padding-left: 16px;
   padding-right: 17px;
   padding-top: 10px;
-  padding-bottom: 45px;
+  padding-bottom: 60px;
   margin-bottom: 21px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -843,8 +873,6 @@ html {
     bottom: 0;
     right: 0;
     padding-left: 22px;
-    padding-top: 18px;
-    padding-bottom: 18px;
     padding-right: 0;
     width: 462px;
     height: 210px;
@@ -881,9 +909,6 @@ html {
   }
 }
 
-.block-listening {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
   .block-listening {
     margin-bottom: 6px;
@@ -1545,11 +1570,16 @@ html {
   letter-spacing: 0.02em;
   color: var(--link-color);
   font-size: 11px;
+  -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1600px) {
   .link-agreement {
     font-size: 24px;
   }
+}
+.link-agreement:hover {
+  color: #21333c;
 }
 
 .container-footer:before {
@@ -1575,6 +1605,11 @@ html {
 
 .item-agreement {
   position: relative;
+  -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.item-agreement:hover {
+  scale: 1.1;
 }
 
 .item-agreement:not(:first-child)::before {
@@ -1707,8 +1742,8 @@ html {
   padding-top: 39px;
   padding-right: 14px;
   padding-left: 14px;
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   -webkit-transition: -webkit-transform 700ms cubic-bezier(0.4, 0, 0, 1);
   transition: -webkit-transform 700ms cubic-bezier(0.4, 0, 0, 1);
   transition: transform 700ms cubic-bezier(0.4, 0, 0, 1);
@@ -1914,13 +1949,13 @@ html {
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   outline: none; /* Remove outline */
-  background-color: rgb(255, 255, 255); /* Set a background color */
+  background-color: rgb(203, 206, 216); /* Set a background color */
   color: black; /* Text color */
   border: 2px solid var(--border-button-color);
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 25px; /* Some padding */
+  padding: 15px; /* Some padding */
   border-radius: 50%; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  font-size: 14px; /* Increase font size */
 }
 
 .top-btn:hover {
