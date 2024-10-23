@@ -200,6 +200,7 @@ html {
 }
 .header-button:hover {
   scale: 1.05;
+  background-color: #c7cfd3;
 }
 
 .page-item {
@@ -1829,6 +1830,8 @@ html {
   font-size: 22px;
   line-height: 1.5;
   color: var(--link-color-menu);
+  -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 575px) {
   .mob-link {
@@ -1839,6 +1842,9 @@ html {
   .mob-link {
     font-size: 22px;
   }
+}
+.mob-link:hover {
+  color: #a1a7a9;
 }
 
 .mob-icon-close {
@@ -1865,6 +1871,8 @@ html {
   width: 291px;
   height: 65px;
   padding: 17.5px 101px;
+  -webkit-transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 575px) {
   .btn-talk {
@@ -1881,6 +1889,9 @@ html {
     font-size: 18px;
     padding: 16.5px 65px;
   }
+}
+.btn-talk:hover {
+  background-color: #c7cfd3;
 }
 
 .logo {

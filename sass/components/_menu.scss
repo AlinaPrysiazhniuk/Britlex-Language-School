@@ -169,6 +169,7 @@
   font-size: 22px;
   line-height: 1.5;
   color: var(--link-color-menu);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 575px) {
     font-size: 24px;
@@ -176,6 +177,9 @@
 
   @include tablet {
     font-size: 22px;
+  }
+  &:hover {
+    color: #a1a7a9;
   }
 }
 
@@ -202,6 +206,7 @@
   width: 291px;
   height: 65px;
   padding: 17.5px 101px;
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 575px) {
     width: 330px;
@@ -215,6 +220,10 @@
     height: 60px;
     font-size: 18px;
     padding: 16.5px 65px;
+  }
+
+  &:hover {
+    background-color: #c7cfd3;
   }
 }
 //
